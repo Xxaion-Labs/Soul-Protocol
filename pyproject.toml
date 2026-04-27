@@ -4,26 +4,17 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "doctrine-protocol"
-version = "0.1.0"          # Start low, bump later
-description = "Mountable AI behavior framework enforcing user authority, non-autonomy, safety & anti-drift"
+version = "0.1.0"
+description = "Mountable AI behavior framework enforcing user authority, non-autonomy, non-sentience, safety & anti-drift"
 readme = "README.md"
 license = {text = "Apache-2.0"}
-authors = [
-    {name = "Salvatore Anziano", email = "your-email-if-you-want@xxaionlabs.com"}
-]
-keywords = ["ai", "llm", "prompt-engineering", "ai-safety", "doctrine"]
-classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: Apache Software License",
-    "Operating System :: OS Independent",
-]
-
+authors = [{name = "Xxaion Labs", email = "xxaionlabs@gmail.com"}]
+keywords = ["ai", "llm", "prompt-engineering", "ai-safety", "doctrine", "guardrails"]
 requires-python = ">=3.8"
 
 [project.urls]
 Homepage = "https://github.com/Xxaion-Labs/doctrine-protocol"
-Repository = "https://github.com/Xxaion-Labs/doctrine-protocol"
 
 [tool.setuptools]
-packages = ["doctrine"]   # This assumes your SDK code lives in a folder called "doctrine" or "sdk/doctrine". Change if needed.
-package-dir = {"" = "sdk"} # Adjust this path so "from doctrine import Doctrine" works after install
+packages = ["doctrine"]
+package-dir = {"doctrine" = "sdk"}
