@@ -15,6 +15,12 @@ requires-python = ">=3.8"
 [project.urls]
 Homepage = "https://github.com/Xxaion-Labs/doctrine-protocol"
 
+[project.scripts]
+doctrine = "doctrine.cli:main"
+
 [tool.setuptools]
 packages = ["doctrine"]
 package-dir = {"doctrine" = "sdk"}
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
