@@ -1,0 +1,12 @@
+{
+  "nodes": [
+    {
+      "name": "example",
+      "id": "example-1",
+      "path": "nodes/example.md",
+      "definition": "Minimal reusable concept.",
+      "valid": true,
+      "errors": []
+    }
+  ]
+}
