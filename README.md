@@ -1,6 +1,3 @@
-# HELP NEEDED PLEASE READ CONTRIBUTING.md
-💜💜💜
-
 ## Doctrine Protocol
 
 **A lightweight, mountable framework for defining reusable AI behavior rules ("concept nodes" and doctrines) that enforce user authority, consistency, non-autonomy, safety, clarity, and anti-drift.**
