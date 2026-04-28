@@ -7,7 +7,7 @@ name = "doctrine-protocol"
 version = "0.1.0"
 description = "Mountable AI behavior framework enforcing user authority, non-autonomy, non-sentience, safety & anti-drift"
 readme = "README.md"
-license = {text = "Apache-2.0"}
+license = {text = "AGPL-3.0-or-later"}
 authors = [{name = "Xxaion Labs", email = "xxaionlabs@gmail.com"}]
 keywords = ["ai", "llm", "prompt-engineering", "ai-safety", "doctrine", "guardrails"]
 requires-python = ">=3.8"
