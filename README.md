@@ -1,5 +1,7 @@
 ## Doctrine Protocol
 
+[![Validate Doctrine Protocol](https://github.com/Xxaion-Labs/doctrine-protocol/actions/workflows/validate.yml/badge.svg)](https://github.com/Xxaion-Labs/doctrine-protocol/actions/workflows/validate.yml)
+
 **A lightweight, mountable framework for defining reusable AI behavior rules ("concept nodes" and doctrines) that enforce user authority, consistency, non-autonomy, safety, clarity, and anti-drift.**
 
 Version: 1.0.0 (Public Baseline)  
