@@ -45,18 +45,21 @@ doctrine profile -> mount -> command -> capability -> permission -> adapter -> r
 
 ## Phase 2: Local Runtime
 
-Status: next.
+Status: active.
 
 Goal: make DoctrineOS useful on a normal machine.
 
-Planned:
+In progress:
 
 - capability kernel
+
+Planned:
+
 - receipt ledger
 - filesystem adapter
 - project workspace model
 - local model adapter
-- safe terminal adapter with permission gates
+- terminal adapter with permission gates
 - config and profile manager
 - rollback points
 
