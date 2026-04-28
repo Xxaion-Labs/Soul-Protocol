@@ -1,12 +1,10 @@
-# Release Notes
+# Changelog
 
 ## v1.0.0-public-baseline
 
-Doctrine Protocol public baseline.
+Initial public baseline for Doctrine Protocol.
 
-This release establishes `.doctrine` as a public, mountable protocol surface for reusable AI behavior rules, concept nodes, and doctrine files.
-
-### Included
+### Added
 
 - Public standard doctrine template
 - Python SDK

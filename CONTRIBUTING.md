@@ -1,54 +1,58 @@
-Thanks for wanting to help — this file explains the fastest way to contribute useful work.
+# Contributing
 
-Quick note from the maintainer
-- The project is run by a solo maintainer who has a traumatic brain injury (TBI). Please be patient and kind — small, clear PRs and short, explicit questions are the best way to help.
+Thanks for helping improve Doctrine Protocol. Keep contributions small, clear, and easy to review.
 
-How to start
-1. Fork the repo and create a branch for your work:
-   - git checkout -b feat/yourname-short-desc
-2. Target branch for PRs: feature/sdk-mvp
-   - Open PRs should target feature/sdk-mvp so changes can be reviewed and grouped.
+## Start here
 
-Development workflow
-- Install dependencies (if present):
-  - python -m venv .venv
-  - source .venv/bin/activate  # or .venv\Scripts\activate on Windows
-  - pip install -r requirements file exists
-- Run tests:
-  - python -m pytest
-- Format code:
-  - black .  (optional but appreciated)
+1. Fork the repository.
+2. Create a focused branch:
 
-What to work on (small, focused contributions)
-- See the pinned “Help wanted” issue for prioritized tasks (parse, mount, adapters, tests, CI).
-- Pick one small logical change per PR).
-- Use clear commit messages, e.g., feat: add MockAdapter or fix(doctrine): handle empty laws.
-- Include a short description and testing notes in the PR body.
-- If your change needs review, request a reviewer in the PR.
+```bash
+git checkout -b feat/short-description
+```
 
-Testing & CI
-- Add pytest tests for any behavior you change or add.
-- CI runs on push/PR — make sure tests pass locally before opening a PR.
+3. Open pull requests against `main` unless a maintainer asks for a different target.
 
-Communication
-- If you’re unsure about a task, open an issue or comment on a help-wanted issue before starting.
-- Be explicit about what you need reviewed or if you need pairing help.
-- The maintainer will respond but may need extra time; patience is appreciated.
+## Development
 
-Non-code contributions
-- Docs, examples, test cases, and issue triage are extremely valuable.
-- If you can’t code but want to help coordinate contributors, comment on the help-wanted issue.
+```bash
+pip install -e . pytest
+python -m pytest
+python tools/validate_nodes.py
+python tools/check_registry.py
+```
 
-Credit & maintenance
-- Contributors will be credited in the README.
-- Sustained contributors may be invited as co-maintainers.
+When adding or changing public nodes, update the registry:
 
-License
-- This project uses the repository’s chosen license. Check LICENSE in the repo root.
+```bash
+python tools/build_registry.py
+python tools/check_registry.py
+```
 
-Security & privacy
-- Never include API keys, secrets, or personal/private data in PRs or issues.
-- If you discover a security issue, open a private issue and label it “security” if possible.
+## Good contribution types
 
-Thank you
-- Small contributions move this project forward. If you want guidance, mention the task number in an issue or open a draft PR and I’ll help refine it.
+- Public doctrine nodes
+- SDK fixes
+- CLI improvements
+- Adapter examples
+- Documentation improvements
+- Tests and validation tooling
+- Issue triage
+
+## Pull request rules
+
+- One logical change per PR.
+- Include a short summary and testing notes.
+- Do not include secrets, API keys, private prompts, private doctrine files, or personal data.
+- Keep public nodes generic and reusable.
+- Preserve user authority, non-autonomy, non-sentience, safety, clarity, and anti-drift principles.
+
+## Security and privacy
+
+Never include private data in issues, pull requests, examples, tests, or fixtures.
+
+If you find a security concern, open a minimal issue with no sensitive details and mark it clearly as security-related.
+
+## License
+
+By contributing, you agree that your contribution is provided under the repository license.
