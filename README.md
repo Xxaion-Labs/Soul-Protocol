@@ -1,34 +1,47 @@
 ♾️Free and Open Source Forever♾️
 
-## Doctrine Protocol
+# DoctrineOS
 
-[![Validate Doctrine Protocol](https://github.com/Xxaion-Labs/doctrine-protocol/actions/workflows/validate.yml/badge.svg)](https://github.com/Xxaion-Labs/doctrine-protocol/actions/workflows/validate.yml)
+[![Validate DoctrineOS](https://github.com/Xxaion-Labs/DoctrineOS/actions/workflows/validate.yml/badge.svg)](https://github.com/Xxaion-Labs/DoctrineOS/actions/workflows/validate.yml)
 
-**A lightweight, mountable framework for reusable AI behavior rules, concept nodes, doctrine files, mount receipts, validation, and anti-drift control.**
+**DoctrineOS is an AGPL operating system prototype for the post-app age of AI: sovereign computing where intelligence is native, doctrine governs the machine, and the user remains the root of power.**
 
-Version: 1.0.0 (Public Baseline)  
+Version: 0.1.0 Prototype  
 License: AGPLv3-or-later
 
-## Overview
+## What this is
 
-Doctrine Protocol provides a structured system for creating and mounting behavior templates that guide how AI systems respond.
+DoctrineOS is a public, doctrine-native AI operating system prototype.
 
-It is built around **concept nodes**: reusable units that encode rules, context, and interaction patterns. The core public artifact is `standard_public_template.doctrine` in the repository root.
+It is not a chatbot, wrapper, plugin, desktop assistant, or agent demo. It is the beginning of a user-governed computing environment where AI is part of the operating layer itself and Doctrine Protocol supplies the behavioral control substrate.
 
-## DoctrineOS Direction
+## What it unlocks
 
-Doctrine Protocol is the control substrate for DoctrineOS: a public, doctrine-native AI operating system direction.
+DoctrineOS moves AI from an app-shaped box into a governed operating surface:
 
-DoctrineOS aims to become a real user-controlled computing environment where AI is part of the operating system itself and doctrine supplies the behavioral control layer.
+- the user remains root authority
+- doctrine profiles define operating behavior
+- actions are capability-scoped
+- permissioned actions emit receipts
+- runtime state stays inspectable
+- adapters connect models, files, tools, apps, and services
+- public code remains open under AGPLv3-or-later
 
-Start here:
+## Current status
 
-- [DoctrineOS Direction](DOCTRINE_OS.md)
-- [DoctrineOS Architecture Seed](DOCTRINE_OS_ARCHITECTURE.md)
-- [DoctrineOS Roadmap](docs/doctrineos_roadmap.md)
-- [DoctrineOS Prototype Shell](docs/doctrineos_shell.md)
+DoctrineOS currently includes:
 
-## DoctrineOS Prototype Shell
+- Doctrine Protocol SDK and CLI
+- `.doctrine` file loading, parsing, validation, and mounting
+- mount receipts with context hashes
+- public concept nodes and generated node registry
+- adapter examples
+- DoctrineOS prototype shell
+- default DoctrineOS profile
+- action receipts and runtime state logging
+- GitHub Actions validation
+
+## DoctrineOS prototype shell
 
 The `doctrineos` command is the first runnable DoctrineOS control surface.
 
@@ -42,23 +55,11 @@ doctrineos --yes inspect workspace
 
 Runtime state and receipts are written under `.doctrineos/` by default.
 
-## Core Goals
-
-- Keep the user as the root authority.
-- Keep AI systems non-autonomous and non-sentient.
-- Make AI behavior clearer, steadier, and easier to inspect.
-- Support practical helpfulness with privacy and safety boundaries.
-- Reduce drift through explicit doctrine, validation, receipts, and correction loops.
-
-## License Position
-
-Doctrine Protocol is licensed under **AGPLv3-or-later** so the public project and modified public versions stay under the same open license family.
-
-## Quick Start
+## Quick start
 
 ```bash
-git clone https://github.com/Xxaion-Labs/doctrine-protocol.git
-cd doctrine-protocol
+git clone https://github.com/Xxaion-Labs/DoctrineOS.git
+cd DoctrineOS
 pip install -e .
 ```
 
@@ -97,40 +98,31 @@ receipt = doctrine.mount()
 print(receipt["instruction_context"])
 ```
 
-## Features
+## Project map
 
-- Reusable concept nodes and doctrine files
-- Simple mounting mechanism to apply doctrine context
-- Python SDK (`from doctrine import Doctrine`)
-- CLI command (`doctrine`)
-- DoctrineOS prototype shell command (`doctrineos`)
-- Model-agnostic design
-- Mount receipts with context hashes
-- Registry and validation tooling
-- AGPLv3-or-later licensing
-
-## Reference Docs
-
-- [Specification](SPEC.md) — protocol definitions, node format, validation, and mount receipt shape
-- [Compatibility](COMPATIBILITY.md) — `.doctrine compatible` requirements and adoption language
-- [Examples](examples/README.md) — prompt export, API payload, and local model examples
-- [Nodes](nodes/README.md) — public node library and node format
-- [Roadmap](ROADMAP.md) — public development path
+- [Vision](VISION.md) — why DoctrineOS exists
+- [Architecture](ARCHITECTURE.md) — system layers and control spine
+- [Roadmap](ROADMAP.md) — build path from prototype to public OS environment
+- [Prototype Shell](docs/prototype-shell.md) — runnable shell guide
+- [Doctrine Protocol Specification](SPEC.md) — `.doctrine` format and mount receipts
+- [Compatibility](COMPATIBILITY.md) — `.doctrine compatible` requirements
+- [Examples](examples/README.md) — adapter and workflow examples
+- [Nodes](nodes/README.md) — public concept node library
 - [Changelog](CHANGELOG.md) — release history
-- [Contributing](CONTRIBUTING.md) — contribution workflow and safety rules
+- [Contributing](CONTRIBUTING.md) — contribution guide
 
-## Repository Structure
+## Repository structure
 
 - `standard_public_template.doctrine` — core public doctrine template
 - `profiles/` — DoctrineOS profile examples
-- `nodes/` — concept nodes
-- `sdk/` — Python mounting library
 - `doctrineos/` — DoctrineOS prototype shell and runtime
-- `tools/` — validation and helper tools
-- `tests/` — SDK, example, and DoctrineOS tests
+- `sdk/` — Doctrine Protocol Python SDK
+- `nodes/` — public concept nodes
 - `registry/` — generated public node registry
 - `examples/` — adapter and workflow examples
-- `docs/` — DoctrineOS and project docs
+- `tools/` — validation and helper tools
+- `tests/` — SDK, example, and DoctrineOS tests
+- `docs/` — additional DoctrineOS docs
 
 ## Development
 
