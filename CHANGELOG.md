@@ -7,6 +7,7 @@
 - Unified public documentation around DoctrineOS as the main project and Doctrine Protocol as the control substrate.
 - Renamed the public repository from `doctrine-protocol` to `DoctrineOS`.
 - Relicensed project metadata from Apache 2.0 to AGPLv3-or-later.
+- Routed DoctrineOS runtime capability decisions through a capability kernel.
 
 ### Added
 
@@ -15,6 +16,9 @@
 - Default DoctrineOS profile.
 - Action receipts and runtime state logging.
 - Tests for DoctrineOS boot, profile loading, permission refusal, approved action execution, receipt creation, and state creation.
+- Capability kernel with capability modes, risk levels, policy decisions, and runtime policy output.
+- Default public capability policy.
+- Capability kernel tests and documentation.
 
 ## v0.1.0-prototype
 
