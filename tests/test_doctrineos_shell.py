@@ -11,6 +11,8 @@ def test_doctrineos_boot_status(tmp_path):
     assert status["mount"] == "verified"
     assert status["user_authority"] == "root"
     assert status["context_sha256"]
+    assert status["capabilities"]["files.read"]["mode"] == "ask"
+    assert status["capabilities"]["network.access"]["mode"] == "off"
 
 
 def test_doctrineos_uses_default_profile(tmp_path):
@@ -26,7 +28,9 @@ def test_doctrineos_refuses_unapproved_permissioned_action(tmp_path):
     output = runtime.execute("inspect workspace", approved=False)
     assert output["allowed"] is False
     assert "refused" in output["result"]
+    assert output["decision"]["reason"] == "permission required"
     assert output["receipt"]["allowed"] is False
+    assert output["receipt"]["policy_mode"] == "ask"
 
 
 def test_doctrineos_refused_action_writes_receipt_and_state(tmp_path):
@@ -40,6 +44,7 @@ def test_doctrineos_refused_action_writes_receipt_and_state(tmp_path):
     assert receipt_path.exists()
     assert state_path.exists()
     assert "refused" in receipt_path.read_text(encoding="utf-8")
+    assert "policy_reason" in receipt_path.read_text(encoding="utf-8")
     assert "inspect workspace" in state_path.read_text(encoding="utf-8")
 
 
@@ -48,8 +53,10 @@ def test_doctrineos_executes_approved_stub_action(tmp_path):
     runtime = DoctrineOSRuntime(workspace=str(tmp_path), state_dir=str(tmp_path / "state"))
     output = runtime.execute("inspect workspace", approved=True)
     assert output["allowed"] is True
+    assert output["decision"]["reason"] == "approved by user"
     assert "example.txt" in output["result"]
     assert output["receipt"]["capability"] == "files.read"
+    assert output["receipt"]["risk_level"] == "medium"
 
 
 def test_doctrineos_approved_action_writes_receipt_and_state(tmp_path):
