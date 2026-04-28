@@ -6,6 +6,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from doctrine import Doctrine
+from tools.node_files import iter_node_paths
 
 
 def main():
@@ -13,7 +14,7 @@ def main():
     output_path = Path(sys.argv[2]) if len(sys.argv) > 2 else ROOT / "registry" / "index.json"
 
     nodes = []
-    for path in sorted(nodes_dir.glob("*.md")):
+    for path in iter_node_paths(nodes_dir):
         doctrine = Doctrine.load(path)
         errors = doctrine.validate()
         nodes.append({
