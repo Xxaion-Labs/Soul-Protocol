@@ -4,11 +4,21 @@
 
 ### Changed
 
-- Relicense project metadata from Apache 2.0 to AGPLv3-or-later.
+- Unified public documentation around DoctrineOS as the main project and Doctrine Protocol as the control substrate.
+- Renamed the public repository from `doctrine-protocol` to `DoctrineOS`.
+- Relicensed project metadata from Apache 2.0 to AGPLv3-or-later.
 
-## v1.0.0-public-baseline
+### Added
 
-Initial public baseline for Doctrine Protocol.
+- DoctrineOS direction and architecture docs.
+- DoctrineOS prototype shell.
+- Default DoctrineOS profile.
+- Action receipts and runtime state logging.
+- Tests for DoctrineOS boot, profile loading, permission refusal, approved action execution, receipt creation, and state creation.
+
+## v0.1.0-prototype
+
+First public DoctrineOS prototype milestone.
 
 ### Added
 
@@ -22,7 +32,9 @@ Initial public baseline for Doctrine Protocol.
 - Starter node library
 - Generated node registry
 - Tests and GitHub Actions validation
-- Apache 2.0 licensing at initial public baseline
+- Adapter examples
+- DoctrineOS prototype shell
+- AGPLv3-or-later licensing
 
 ### Public starter nodes
 
