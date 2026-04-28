@@ -17,10 +17,11 @@ Homepage = "https://github.com/Xxaion-Labs/doctrine-protocol"
 
 [project.scripts]
 doctrine = "doctrine.cli:main"
+doctrineos = "doctrineos.shell:main"
 
 [tool.setuptools]
-packages = ["doctrine"]
-package-dir = {"doctrine" = "sdk"}
+packages = ["doctrine", "doctrineos", "doctrineos.adapters"]
+package-dir = {"doctrine" = "sdk", "doctrineos" = "doctrineos"}
 
 [tool.pytest.ini_options]
 pythonpath = ["."]
