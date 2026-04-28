@@ -94,6 +94,14 @@ It also includes a **Structured Authority Kernel**, state truth ladder, anti-dri
 - Proof-oriented architecture (state manifests, verification, rollback)
 - Apache 2.0 — fully permissive for commercial and community use
 
+## Reference Docs
+
+- [Specification](SPEC.md) — protocol definitions, node format, validation, and mount receipt shape
+- [Compatibility](COMPATIBILITY.md) — `.doctrine compatible` requirements and adoption language
+- [Roadmap](ROADMAP.md) — public development path
+- [Changelog](CHANGELOG.md) — release history
+- [Contributing](CONTRIBUTING.md) — contribution workflow and safety rules
+
 ## Repository Structure
 
 - `standard_public_template.doctrine` — Core public doctrine (in root)
@@ -109,15 +117,8 @@ It also includes a **Structured Authority Kernel**, state truth ladder, anti-dri
 pip install -e . pytest
 python -m pytest
 python tools/validate_nodes.py
-python tools/build_registry.py
+python tools/check_registry.py
 ```
-
-## Roadmap
-
-- Expanded SDK documentation and tests
-- More node types and examples
-- Validation and proof tools
-- Community template variations
 
 ## License
 
