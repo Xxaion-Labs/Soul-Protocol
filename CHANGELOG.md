@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+### Changed
+
+- Relicense project metadata from Apache 2.0 to AGPLv3-or-later.
+
 ## v1.0.0-public-baseline
 
 Initial public baseline for Doctrine Protocol.
@@ -16,7 +22,7 @@ Initial public baseline for Doctrine Protocol.
 - Starter node library
 - Generated node registry
 - Tests and GitHub Actions validation
-- Apache 2.0 licensing
+- Apache 2.0 licensing at initial public baseline
 
 ### Public starter nodes
 
