@@ -1,6 +1,6 @@
 ---
 name: Node proposal
-about: Propose a public Doctrine concept node
+about: Propose a public Doctrine concept node for DoctrineOS-compatible runtimes
 title: "node: "
 labels: node proposal
 ---
@@ -26,8 +26,8 @@ What behavior should this node guide?
 ### ID
 
 
-## Public-safety check
+## Public hygiene check
 
 - [ ] This node is generic and reusable.
-- [ ] This node does not include secrets, private prompts, personal data, or private doctrine material.
+- [ ] This node does not include secrets, credentials, sensitive material, non-public material, or personal data.
 - [ ] This node preserves user authority, safety, clarity, and non-autonomy principles.
