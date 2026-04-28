@@ -6,11 +6,12 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from doctrine import Doctrine
+from tools.node_files import iter_node_paths
 
 
 def build_expected():
     nodes = []
-    for path in sorted((ROOT / "nodes").glob("*.md")):
+    for path in iter_node_paths(ROOT / "nodes"):
         doctrine = Doctrine.load(path)
         errors = doctrine.validate()
         nodes.append({
