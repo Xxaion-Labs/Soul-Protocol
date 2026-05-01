@@ -1,15 +1,26 @@
 # Compatibility
 
-DoctrineOS compatibility begins with Doctrine Protocol compatibility.
+DoctrineOS compatibility begins with support for `.glyph` Tesseracts.
 
-A project is `.doctrine compatible` when it can use the public `.doctrine` format and mount doctrine or concept nodes without requiring custom closed extensions.
+```text
+.glyph
+
+    (digital)
+A                Tesseract
+
+ ⧉
+```
+
+The current implementation also supports the `.doctrine` compatibility surface during transition.
 
 ## Minimum requirements
 
 A compatible tool can:
 
-- load `.doctrine` files or concept nodes
+- load `.glyph`, `.doctrine`, or concept node files
 - parse metadata and section headings
+- parse JSON sentinel blocks when present
+- report sentinel parse errors instead of silently ignoring them
 - validate required node structure
 - produce mounted instruction context
 - preserve stable IDs and source paths when available
@@ -20,10 +31,18 @@ A compatible tool can:
 Projects may say:
 
 ```text
+.glyph compatible
+```
+
+when they support the forward public filetype surface.
+
+Projects may say:
+
+```text
 .doctrine compatible
 ```
 
-when they support the minimum requirements above.
+when they specifically support the current compatibility surface.
 
 ## DoctrineOS ecosystem fit
 
@@ -38,3 +57,7 @@ Compatible projects can act as:
 - OS-level components
 
 The compatibility floor stays intentionally simple so builders can fork, inspect, implement, and improve it.
+
+## Boundary
+
+Compatibility does not imply AI sentience, autonomy, independent will, physical four-dimensional geometry, or unsupported capability claims.
