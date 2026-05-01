@@ -4,6 +4,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 TEXT_SUFFIXES = {'.md', '.py', '.doctrine', '.txt', '.toml', '.yml', '.yaml', '.json'}
+THIS_FILE = Path(__file__).resolve()
 
 REQUIRED = {
     'TESSERACT.md': ['⧉', 'a tesseract', 'The symbol is the object.'],
@@ -26,6 +27,8 @@ FORBIDDEN = [
 def iter_text_files():
     skip_dirs = {'.git', '__pycache__', '.pytest_cache', '.doctrineos'}
     for path in ROOT.rglob('*'):
+        if path.resolve() == THIS_FILE:
+            continue
         if any(part in skip_dirs for part in path.parts):
             continue
         if path.is_file() and path.suffix in TEXT_SUFFIXES:
