@@ -1,28 +1,28 @@
 # Architecture
 
-DoctrineOS is a user-governed AI operating system prototype built around mountable Tesseracts.
+Soul Protocol is a user-governed AI-native operating prototype built around mountable Soul Protocol objects.
 
 ```text
-.glyph
+.soul
 
     (digital)
-A                Tesseract
+A                Soul Protocol object
 
  ⧉
 ```
 
-The symbol is the object. In prose, call it **a Tesseract**.
+The symbol is the object. In prose, call it **a Soul Protocol object**.
 
-DoctrineOS begins as a userland runtime on an open base system and grows toward a bootable, AI-native operating environment.
+Soul Protocol begins as a userland runtime on an open base system and grows toward a bootable, AI-native operating environment: not another app around intelligence, but a control surface where intelligence is mounted through readable objects, bounded by permission, and made accountable through receipts.
 
 ## Layer model
 
 ```text
-DoctrineOS
+Soul Protocol
 ├─ Base System
 │  └─ Linux or another open base capable of booting real hardware
-├─ Tesseract Control Layer
-│  └─ .glyph and .doctrine-compatible mounts, authority policy, receipts, validation, profiles
+├─ Soul Protocol Control Layer
+│  └─ .soul trajectory, .doctrine-compatible mounts, authority policy, receipts, validation, profiles
 ├─ AI System Shell
 │  └─ user-facing command surface for natural language and structured commands
 ├─ Capability Layer
@@ -34,7 +34,7 @@ DoctrineOS
 ├─ Node Package Layer
 │  └─ installable public behavior nodes and packages
 ├─ Application Layer
-│  └─ Tesseract-aware apps and workflows
+│  └─ Soul Protocol-aware apps and workflows
 └─ User Authority Layer
    └─ the human remains root authority
 ```
@@ -44,14 +44,14 @@ DoctrineOS
 The current prototype proves this spine:
 
 ```text
-Tesseract-compatible file -> mount -> command -> capability -> permission -> adapter -> receipt -> state
+Soul Protocol-compatible object -> mount -> command -> capability -> permission -> adapter -> receipt -> state
 ```
 
 ## First build target
 
 The first practical target is not a custom kernel.
 
-The first target is a Tesseract-aware userland running on an open base system:
+The first target is a Soul Protocol-aware userland running on an open base system:
 
 1. local command shell first
 2. mounting before automation
@@ -61,19 +61,19 @@ The first target is a Tesseract-aware userland running on an open base system:
 
 ## Operating principles
 
-- The OS must be user-governed.
+- The system must be user-governed.
 - The AI layer must remain non-autonomous.
 - Actions must be inspectable.
 - Powerful actions must be permissioned.
 - State must be legible and recoverable.
-- Tesseracts must be mountable, composable, and verifiable.
+- Soul Protocol objects must be mountable, composable, and verifiable.
 - Public code must remain open under AGPLv3-or-later.
 
 ## Current milestone
 
-DoctrineOS currently has a minimal shell that can:
+Soul Protocol currently has a minimal compatibility shell that can:
 
-- load a Tesseract-compatible profile
+- load a Soul Protocol-compatible profile
 - mount it
 - emit receipts
 - accept user commands
@@ -86,4 +86,4 @@ This proves the operating control spine before full desktop or kernel-level inte
 
 ## Boundary
 
-DoctrineOS does not claim AI sentience, autonomy, independent will, unsupported capability, or physical four-dimensional geometry.
+Soul Protocol does not claim AI sentience, autonomy, independent will, unsupported capability, or physical four-dimensional geometry.
