@@ -71,7 +71,7 @@
       "path": "public-evidence/PUBLIC_DOCTRINE_L1_DOCTOR.json"
     }
   ],
-  "created_at_utc": "2026-05-01T11:54:14.390592Z",
+  "created_at_utc": "2026-05-01T12:00:36.775620Z",
   "failure_classes_guarded": [
     "PUBLIC_L1_RECEIPT_STALE",
     "PUBLIC_GREEN_CLAIM_FROM_PARTIAL_PROOF",
