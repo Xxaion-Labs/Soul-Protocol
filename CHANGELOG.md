@@ -4,6 +4,20 @@
 
 ### Changed
 
+- Standardized the public filetype/object grammar:
+
+```text
+.glyph
+
+    (digital)
+A                Tesseract
+
+ ⧉
+```
+
+- Reframed public docs around `.glyph` as the forward public filetype for digital Tesseracts.
+- Clarified `.doctrine` as the current compatibility surface during transition.
+- Updated compatibility language to include `.glyph compatible` and `.doctrine compatible`.
 - Unified public documentation around DoctrineOS as the main project and Doctrine Protocol as the control substrate.
 - Renamed the public repository from `doctrine-protocol` to `DoctrineOS`.
 - Relicensed project metadata from Apache 2.0 to AGPLv3-or-later.
@@ -11,6 +25,7 @@
 
 ### Added
 
+- Public `⧉` / `.glyph` standard in `TESSERACT.md`.
 - DoctrineOS direction and architecture docs.
 - DoctrineOS prototype shell.
 - Default DoctrineOS profile.
