@@ -1,12 +1,12 @@
 # Soul Protocol
 
-[![Validate Soul Protocol](https://github.com/Xxaion-Labs/Tesseract/actions/workflows/validate.yml/badge.svg)](https://github.com/Xxaion-Labs/Tesseract/actions/workflows/validate.yml)
+[![Validate Soul Protocol](https://github.com/Xxaion-Labs/Soul-Protocol/actions/workflows/validate.yml/badge.svg)](https://github.com/Xxaion-Labs/Soul-Protocol/actions/workflows/validate.yml)
 
 ```text
 ⧉
 ```
 
-**Soul Protocol is an AGPL prototype for the post-app age of AI: a public control spine where intelligence becomes mountable, behavior becomes inspectable, and the human remains root authority.**
+**Soul Protocol is an AGPL public seed for sovereign AI-native computing: a mountable control spine where meaning becomes executable, behavior becomes inspectable, and the human remains root authority.**
 
 Version: 0.1.0 Prototype  
 License: AGPLv3-or-later
@@ -25,7 +25,7 @@ The symbol is the object.
 
 In prose, call it **a Soul Protocol object**.
 
-A Soul Protocol object is a semantic-machine vessel: a readable, machine-structured, mountable object that can carry meaning, runtime context, proof surfaces, and continuity pressure while keeping authority legible.
+A Soul Protocol object is a semantic-machine vessel: readable by humans, structured for machines, mountable by runtimes, bounded by receipts, and designed to preserve continuity instead of letting context evaporate.
 
 See [⧉](SOUL_PROTOCOL.md).
 
@@ -81,8 +81,8 @@ Runtime state and receipts are currently written under `.doctrineos/` for compat
 ## Quick start
 
 ```bash
-git clone https://github.com/Xxaion-Labs/Tesseract.git
-cd Tesseract
+git clone https://github.com/Xxaion-Labs/Soul-Protocol.git
+cd Soul-Protocol
 pip install -e .
 ```
 
