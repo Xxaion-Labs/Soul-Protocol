@@ -1,4 +1,4 @@
-name: Validate Doctrine Protocol
+name: Validate DoctrineOS
 
 on:
   push:
@@ -26,6 +26,9 @@ jobs:
 
       - name: Check registry
         run: python tools/check_registry.py
+
+      - name: Check public tesseract standard
+        run: python tools/check_tesseract_standard.py
 
       - name: Compile public Doctrine L1 index
         run: python tools/doctrine_l1_index.py compile --apply
