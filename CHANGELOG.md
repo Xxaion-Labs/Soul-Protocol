@@ -4,6 +4,10 @@
 
 ### Changed
 
+- Standardized public `⧉` usage: the symbol is the object; in prose, call it a tesseract.
+- Reframed public docs around tesseracts as semantic-machine objects with semantic, machine, mount, and proof faces.
+- Clarified `.doctrine` as the current public compatibility surface.
+- Updated compatibility badge language to include `⧉ compatible`.
 - Unified public documentation around DoctrineOS as the main project and Doctrine Protocol as the control substrate.
 - Renamed the public repository from `doctrine-protocol` to `DoctrineOS`.
 - Relicensed project metadata from Apache 2.0 to AGPLv3-or-later.
@@ -11,6 +15,7 @@
 
 ### Added
 
+- Public `⧉` standard in `TESSERACT.md`.
 - DoctrineOS direction and architecture docs.
 - DoctrineOS prototype shell.
 - Default DoctrineOS profile.
