@@ -1,43 +1,42 @@
 # Roadmap
 
-DoctrineOS is the public AI-native operating system prototype built around `.glyph` Tesseracts.
+Soul Protocol is the public AI-native operating prototype built around `.soul` and Soul Protocol objects.
 
 ```text
-.glyph
+.soul
 
     (digital)
-A                Tesseract
+A                Soul Protocol object
 
  ⧉
 ```
 
-The roadmap moves from public filetype compatibility to userland prototype, then into local runtime, bootable environment, AI-native desktop, and deeper operating-system integration.
+The roadmap moves from public object compatibility to a local userland prototype, then to a broader operating environment.
 
-## Phase 0: Public Filetype Foundation
+## Phase 0: Public Soul Object Foundation
 
-Status: complete.
+Status: active transition.
 
-- public `.glyph` standard
+- public `.soul` standard trajectory
 - current `.doctrine` compatibility surface
 - SDK and CLI
-- CLI for mount, validate, inspect, and registry build
 - parser and validator
 - mount receipts with context hashes
 - public standard compatibility template
 - starter public nodes
 - generated node registry
 - validation workflow
-- AGPLv3-or-later anti-capture license
+- AGPLv3-or-later license
 
 ## Phase 1: Userland Prototype
 
-Status: complete.
+Status: complete compatibility prototype.
 
-Goal: prove the control spine before building a full OS image.
+Goal: prove the control spine before broader system integration.
 
 Complete:
 
-- DoctrineOS shell
+- Soul Protocol compatibility shell
 - profile loader
 - mount receipt display
 - safe command router
@@ -45,24 +44,20 @@ Complete:
 - action log
 - permission prompts
 - state manifest
-- default DoctrineOS profile
+- default compatibility profile
 - receipt and state tests
 
 The current spine is:
 
 ```text
-Tesseract-compatible file -> mount -> command -> capability -> permission -> adapter -> receipt -> state
+Soul Protocol-compatible object -> mount -> command -> capability -> permission -> adapter -> receipt -> state
 ```
 
 ## Phase 2: Local Runtime
 
 Status: active.
 
-Goal: make DoctrineOS useful on a normal machine.
-
-In progress:
-
-- capability kernel
+Goal: make Soul Protocol useful on a normal machine.
 
 Planned:
 
@@ -76,32 +71,32 @@ Planned:
 
 ## Phase 3: Bootable Environment
 
-Goal: ship a real bootable environment.
+Goal: ship a user-governed operating environment.
 
 Planned:
 
-- Linux-based image
-- DoctrineOS shell as primary interface
+- open-base image
+- Soul Protocol shell as primary interface
 - local-first setup wizard
-- profile mounting at boot
+- profile mounting at startup
 - system state dashboard
 
 ## Phase 4: AI-Native Desktop
 
-Goal: make the whole environment Tesseract-aware.
+Goal: make the whole environment Soul Protocol-aware.
 
 Planned:
 
-- Tesseract-aware launcher
+- Soul Protocol-aware launcher
 - app and workflow registry
 - node package manager
 - visible receipts
 - permission ledger
 - user-controlled automation queues
 
-## Phase 5: Deeper OS Integration
+## Phase 5: Deeper System Integration
 
-Goal: move from AI-native userland toward deeper system integration.
+Goal: move from userland toward deeper system integration.
 
 Planned:
 
@@ -113,13 +108,4 @@ Planned:
 
 ## Release discipline
 
-Every public release should remain:
-
-- generic
-- reusable
-- auditable
-- user-governed
-- non-autonomous
-- AGPLv3-or-later
-- aligned with DoctrineOS as public-good infrastructure
-- bounded against unsupported claims
+Every public release should remain generic, reusable, auditable, user-governed, non-autonomous, AGPLv3-or-later, and bounded against unsupported claims.
