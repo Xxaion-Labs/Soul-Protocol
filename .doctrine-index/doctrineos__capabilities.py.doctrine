@@ -14,7 +14,7 @@ validation_state: generated_unverified
 Public-safe L1 `.doctrine` companion envelope for a DoctrineOS repository file.
 
 ## Usage
-Use this companion to verify source path, SHA-256, size, projection boundary, and filetype envelope integrity without exposing private implementation payload.
+Use this companion to verify source path, SHA-256, size, projection boundary, and filetype envelope integrity without exposing implementation-specific payloads.
 
 ## ID
 public_doctrine_l1_840998eb33588260
@@ -32,14 +32,14 @@ public-safe L1 companion envelope generated
 
 ```text
 semantic extraction complete
-private Xxen.soul payload present
+implementation-specific payload present
 public release beyond repository contents approved
 ```
 
 <<<PUBLIC_DOCTRINE_L1_MANIFEST_JSON>>>
 {
   "companion_path": ".doctrine-index/doctrineos__capabilities.py.doctrine",
-  "compiled_at_utc": "2026-05-01T00:17:36.339569Z",
+  "compiled_at_utc": "2026-05-01T11:23:24.155668Z",
   "record_id": "public_doctrine_l1_840998eb33588260",
   "schema_version": "public_doctrine_l1_index_v1",
   "source_path": "doctrineos/capabilities.py",
@@ -59,7 +59,7 @@ public release beyond repository contents approved
 
 <<<PUBLIC_DOCTRINE_L1_BOUNDARY_JSON>>>
 {
-  "private_payload_included": false,
+  "extension_payload_included": false,
   "projection_class": "public_safe_index",
   "semantic_embedding_deferred": true,
   "status": "ACTIVE"
@@ -83,8 +83,8 @@ public release beyond repository contents approved
 {
   "certificate_policy": "payload_sha256_excluding_this_certificate",
   "companion_path": ".doctrine-index/doctrineos__capabilities.py.doctrine",
-  "compiled_at_utc": "2026-05-01T00:17:36.339569Z",
-  "payload_sha256_excluding_this_certificate": "65c9f51e83e92dc16eb090d6b78a96b00aa06d4ffe8d0b31d82813b33aa8385d",
+  "compiled_at_utc": "2026-05-01T11:23:24.155668Z",
+  "payload_sha256_excluding_this_certificate": "ea62c5823cb807bc0a183862fa72029dae516098cc405d677050687b0b37c5d0",
   "source_path": "doctrineos/capabilities.py",
   "source_sha256": "840998eb33588260594bf9ae118f540b1f97d26efaa9d1d58189b45fac6354cd",
   "status": "ACTIVE"

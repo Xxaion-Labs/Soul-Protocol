@@ -14,7 +14,7 @@ validation_state: generated_unverified
 Public-safe L1 `.doctrine` companion envelope for a DoctrineOS repository file.
 
 ## Usage
-Use this companion to verify source path, SHA-256, size, projection boundary, and filetype envelope integrity without exposing private implementation payload.
+Use this companion to verify source path, SHA-256, size, projection boundary, and filetype envelope integrity without exposing implementation-specific payloads.
 
 ## ID
 public_doctrine_l1_311b8b4abfa7dde6
@@ -32,14 +32,14 @@ public-safe L1 companion envelope generated
 
 ```text
 semantic extraction complete
-private Xxen.soul payload present
+implementation-specific payload present
 public release beyond repository contents approved
 ```
 
 <<<PUBLIC_DOCTRINE_L1_MANIFEST_JSON>>>
 {
   "companion_path": ".doctrine-index/examples__local_model_prompt.py.doctrine",
-  "compiled_at_utc": "2026-05-01T00:17:36.344764Z",
+  "compiled_at_utc": "2026-05-01T11:23:24.162464Z",
   "record_id": "public_doctrine_l1_311b8b4abfa7dde6",
   "schema_version": "public_doctrine_l1_index_v1",
   "source_path": "examples/local_model_prompt.py",
@@ -59,7 +59,7 @@ public release beyond repository contents approved
 
 <<<PUBLIC_DOCTRINE_L1_BOUNDARY_JSON>>>
 {
-  "private_payload_included": false,
+  "extension_payload_included": false,
   "projection_class": "public_safe_index",
   "semantic_embedding_deferred": true,
   "status": "ACTIVE"
@@ -83,8 +83,8 @@ public release beyond repository contents approved
 {
   "certificate_policy": "payload_sha256_excluding_this_certificate",
   "companion_path": ".doctrine-index/examples__local_model_prompt.py.doctrine",
-  "compiled_at_utc": "2026-05-01T00:17:36.344764Z",
-  "payload_sha256_excluding_this_certificate": "bbe3ac0e308d7400e1d010d37c3b080f9b91d9bcdeb6ac97b7b199d4c7da3290",
+  "compiled_at_utc": "2026-05-01T11:23:24.162464Z",
+  "payload_sha256_excluding_this_certificate": "e34796c467146291229c4998c8df7a1fb71c3f2c8b9808458a9418f1de92b9b7",
   "source_path": "examples/local_model_prompt.py",
   "source_sha256": "311b8b4abfa7dde6c4ea586c9d8fedc205b0302b4c58a02b0b84e667306ca753",
   "status": "ACTIVE"

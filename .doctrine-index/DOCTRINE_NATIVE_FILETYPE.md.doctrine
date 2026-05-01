@@ -14,7 +14,7 @@ validation_state: generated_unverified
 Public-safe L1 `.doctrine` companion envelope for a DoctrineOS repository file.
 
 ## Usage
-Use this companion to verify source path, SHA-256, size, projection boundary, and filetype envelope integrity without exposing private implementation payload.
+Use this companion to verify source path, SHA-256, size, projection boundary, and filetype envelope integrity without exposing implementation-specific payloads.
 
 ## ID
 public_doctrine_l1_e6df6061a676cbce
@@ -32,14 +32,14 @@ public-safe L1 companion envelope generated
 
 ```text
 semantic extraction complete
-private Xxen.soul payload present
+implementation-specific payload present
 public release beyond repository contents approved
 ```
 
 <<<PUBLIC_DOCTRINE_L1_MANIFEST_JSON>>>
 {
   "companion_path": ".doctrine-index/DOCTRINE_NATIVE_FILETYPE.md.doctrine",
-  "compiled_at_utc": "2026-05-01T00:17:36.333404Z",
+  "compiled_at_utc": "2026-05-01T11:23:24.147713Z",
   "record_id": "public_doctrine_l1_e6df6061a676cbce",
   "schema_version": "public_doctrine_l1_index_v1",
   "source_path": "DOCTRINE_NATIVE_FILETYPE.md",
@@ -59,7 +59,7 @@ public release beyond repository contents approved
 
 <<<PUBLIC_DOCTRINE_L1_BOUNDARY_JSON>>>
 {
-  "private_payload_included": false,
+  "extension_payload_included": false,
   "projection_class": "public_safe_index",
   "semantic_embedding_deferred": true,
   "status": "ACTIVE"
@@ -83,8 +83,8 @@ public release beyond repository contents approved
 {
   "certificate_policy": "payload_sha256_excluding_this_certificate",
   "companion_path": ".doctrine-index/DOCTRINE_NATIVE_FILETYPE.md.doctrine",
-  "compiled_at_utc": "2026-05-01T00:17:36.333404Z",
-  "payload_sha256_excluding_this_certificate": "dcfa7935b5440760f9274ae7a1b4173d7e1d3d1fd61c9bda3d13c4d8c4d35061",
+  "compiled_at_utc": "2026-05-01T11:23:24.147713Z",
+  "payload_sha256_excluding_this_certificate": "793e0cc67062510093589b5739bc1080a63eaa99c2797f06111f99b2778e2e2a",
   "source_path": "DOCTRINE_NATIVE_FILETYPE.md",
   "source_sha256": "e6df6061a676cbce5fa50206ae1f517623fdfb463211fb9a67481f1e8344017c",
   "status": "ACTIVE"

@@ -1,10 +1,10 @@
 DOCTRINE FILE
 version: 1.0.0
-body_id: public_doctrine_l1_9dc4467c3a67119b
+body_id: public_doctrine_l1_d2e76519de6aafaa
 schema_version: public_doctrine_l1_index_v1
 record_type: public_repo_file_companion
 source_path: sdk/parser.py
-source_sha256: 9dc4467c3a67119bd551f72d4d4ec0f536185589060dcadaab05630159e34065
+source_sha256: d2e76519de6aafaacacc9d83b65f74bf475c731116d28d7294346dbde56069cc
 projection_class: public_safe_index
 validation_state: generated_unverified
 
@@ -14,10 +14,10 @@ validation_state: generated_unverified
 Public-safe L1 `.doctrine` companion envelope for a DoctrineOS repository file.
 
 ## Usage
-Use this companion to verify source path, SHA-256, size, projection boundary, and filetype envelope integrity without exposing private implementation payload.
+Use this companion to verify source path, SHA-256, size, projection boundary, and filetype envelope integrity without exposing implementation-specific payloads.
 
 ## ID
-public_doctrine_l1_9dc4467c3a67119b
+public_doctrine_l1_d2e76519de6aafaa
 
 ## Claims supported
 
@@ -32,15 +32,15 @@ public-safe L1 companion envelope generated
 
 ```text
 semantic extraction complete
-private Xxen.soul payload present
+implementation-specific payload present
 public release beyond repository contents approved
 ```
 
 <<<PUBLIC_DOCTRINE_L1_MANIFEST_JSON>>>
 {
   "companion_path": ".doctrine-index/sdk__parser.py.doctrine",
-  "compiled_at_utc": "2026-05-01T00:17:36.353458Z",
-  "record_id": "public_doctrine_l1_9dc4467c3a67119b",
+  "compiled_at_utc": "2026-05-01T11:23:24.175089Z",
+  "record_id": "public_doctrine_l1_d2e76519de6aafaa",
   "schema_version": "public_doctrine_l1_index_v1",
   "source_path": "sdk/parser.py",
   "status": "ACTIVE"
@@ -51,15 +51,15 @@ public release beyond repository contents approved
 {
   "source_embedded": false,
   "source_path": "sdk/parser.py",
-  "source_sha256": "9dc4467c3a67119bd551f72d4d4ec0f536185589060dcadaab05630159e34065",
-  "source_size_bytes": 2968,
+  "source_sha256": "d2e76519de6aafaacacc9d83b65f74bf475c731116d28d7294346dbde56069cc",
+  "source_size_bytes": 3145,
   "status": "ACTIVE"
 }
 <<<END_PUBLIC_DOCTRINE_L1_SOURCE_JSON>>>
 
 <<<PUBLIC_DOCTRINE_L1_BOUNDARY_JSON>>>
 {
-  "private_payload_included": false,
+  "extension_payload_included": false,
   "projection_class": "public_safe_index",
   "semantic_embedding_deferred": true,
   "status": "ACTIVE"
@@ -83,10 +83,10 @@ public release beyond repository contents approved
 {
   "certificate_policy": "payload_sha256_excluding_this_certificate",
   "companion_path": ".doctrine-index/sdk__parser.py.doctrine",
-  "compiled_at_utc": "2026-05-01T00:17:36.353458Z",
-  "payload_sha256_excluding_this_certificate": "37946a50a6996b6c9b2b282dd58c5e4b39950762e4a5a930d5a5caafdb4eea58",
+  "compiled_at_utc": "2026-05-01T11:23:24.175089Z",
+  "payload_sha256_excluding_this_certificate": "8a2054325e3e4fc3961994056bd282b3e8d358287f8576b5fddcfec36cc14b7f",
   "source_path": "sdk/parser.py",
-  "source_sha256": "9dc4467c3a67119bd551f72d4d4ec0f536185589060dcadaab05630159e34065",
+  "source_sha256": "d2e76519de6aafaacacc9d83b65f74bf475c731116d28d7294346dbde56069cc",
   "status": "ACTIVE"
 }
 <<<END_PUBLIC_DOCTRINE_L1_CERTIFICATE_JSON>>>

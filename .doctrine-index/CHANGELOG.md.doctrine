@@ -14,7 +14,7 @@ validation_state: generated_unverified
 Public-safe L1 `.doctrine` companion envelope for a DoctrineOS repository file.
 
 ## Usage
-Use this companion to verify source path, SHA-256, size, projection boundary, and filetype envelope integrity without exposing private implementation payload.
+Use this companion to verify source path, SHA-256, size, projection boundary, and filetype envelope integrity without exposing implementation-specific payloads.
 
 ## ID
 public_doctrine_l1_4ace422333fcd5b1
@@ -32,14 +32,14 @@ public-safe L1 companion envelope generated
 
 ```text
 semantic extraction complete
-private Xxen.soul payload present
+implementation-specific payload present
 public release beyond repository contents approved
 ```
 
 <<<PUBLIC_DOCTRINE_L1_MANIFEST_JSON>>>
 {
   "companion_path": ".doctrine-index/CHANGELOG.md.doctrine",
-  "compiled_at_utc": "2026-05-01T00:17:36.330673Z",
+  "compiled_at_utc": "2026-05-01T11:23:24.144586Z",
   "record_id": "public_doctrine_l1_4ace422333fcd5b1",
   "schema_version": "public_doctrine_l1_index_v1",
   "source_path": "CHANGELOG.md",
@@ -59,7 +59,7 @@ public release beyond repository contents approved
 
 <<<PUBLIC_DOCTRINE_L1_BOUNDARY_JSON>>>
 {
-  "private_payload_included": false,
+  "extension_payload_included": false,
   "projection_class": "public_safe_index",
   "semantic_embedding_deferred": true,
   "status": "ACTIVE"
@@ -83,8 +83,8 @@ public release beyond repository contents approved
 {
   "certificate_policy": "payload_sha256_excluding_this_certificate",
   "companion_path": ".doctrine-index/CHANGELOG.md.doctrine",
-  "compiled_at_utc": "2026-05-01T00:17:36.330673Z",
-  "payload_sha256_excluding_this_certificate": "b32d4c0e899311c184227be827578febd5f60c094e3f53e4b2098b3e4db9c216",
+  "compiled_at_utc": "2026-05-01T11:23:24.144586Z",
+  "payload_sha256_excluding_this_certificate": "86771f0e2d0a39c8ec3d76a451ea8293cf65910fcbfcae52e08036308e6d18f7",
   "source_path": "CHANGELOG.md",
   "source_sha256": "4ace422333fcd5b1a86b36ef612710aff8d23c6249eec92ab9c99db6f2420a51",
   "status": "ACTIVE"

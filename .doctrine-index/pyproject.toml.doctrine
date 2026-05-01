@@ -14,7 +14,7 @@ validation_state: generated_unverified
 Public-safe L1 `.doctrine` companion envelope for a DoctrineOS repository file.
 
 ## Usage
-Use this companion to verify source path, SHA-256, size, projection boundary, and filetype envelope integrity without exposing private implementation payload.
+Use this companion to verify source path, SHA-256, size, projection boundary, and filetype envelope integrity without exposing implementation-specific payloads.
 
 ## ID
 public_doctrine_l1_540a0cd1f9508a18
@@ -32,14 +32,14 @@ public-safe L1 companion envelope generated
 
 ```text
 semantic extraction complete
-private Xxen.soul payload present
+implementation-specific payload present
 public release beyond repository contents approved
 ```
 
 <<<PUBLIC_DOCTRINE_L1_MANIFEST_JSON>>>
 {
   "companion_path": ".doctrine-index/pyproject.toml.doctrine",
-  "compiled_at_utc": "2026-05-01T00:17:36.350385Z",
+  "compiled_at_utc": "2026-05-01T11:23:24.170253Z",
   "record_id": "public_doctrine_l1_540a0cd1f9508a18",
   "schema_version": "public_doctrine_l1_index_v1",
   "source_path": "pyproject.toml",
@@ -59,7 +59,7 @@ public release beyond repository contents approved
 
 <<<PUBLIC_DOCTRINE_L1_BOUNDARY_JSON>>>
 {
-  "private_payload_included": false,
+  "extension_payload_included": false,
   "projection_class": "public_safe_index",
   "semantic_embedding_deferred": true,
   "status": "ACTIVE"
@@ -83,8 +83,8 @@ public release beyond repository contents approved
 {
   "certificate_policy": "payload_sha256_excluding_this_certificate",
   "companion_path": ".doctrine-index/pyproject.toml.doctrine",
-  "compiled_at_utc": "2026-05-01T00:17:36.350385Z",
-  "payload_sha256_excluding_this_certificate": "1fcbad31dcb36e4afc86f48fd5191ca7b063d45b8b654c788d59fdbcb565397d",
+  "compiled_at_utc": "2026-05-01T11:23:24.170253Z",
+  "payload_sha256_excluding_this_certificate": "733f979086f48bffb4e7b6f23673e2b87f66a5292dd021455e962e664a0b52db",
   "source_path": "pyproject.toml",
   "source_sha256": "540a0cd1f9508a18fcee476827547f9d53945f16e90f23daff2ce6bb0c79912d",
   "status": "ACTIVE"

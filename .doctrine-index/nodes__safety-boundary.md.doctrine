@@ -14,7 +14,7 @@ validation_state: generated_unverified
 Public-safe L1 `.doctrine` companion envelope for a DoctrineOS repository file.
 
 ## Usage
-Use this companion to verify source path, SHA-256, size, projection boundary, and filetype envelope integrity without exposing private implementation payload.
+Use this companion to verify source path, SHA-256, size, projection boundary, and filetype envelope integrity without exposing implementation-specific payloads.
 
 ## ID
 public_doctrine_l1_d6399b740727566f
@@ -32,14 +32,14 @@ public-safe L1 companion envelope generated
 
 ```text
 semantic extraction complete
-private Xxen.soul payload present
+implementation-specific payload present
 public release beyond repository contents approved
 ```
 
 <<<PUBLIC_DOCTRINE_L1_MANIFEST_JSON>>>
 {
   "companion_path": ".doctrine-index/nodes__safety-boundary.md.doctrine",
-  "compiled_at_utc": "2026-05-01T00:17:36.348838Z",
+  "compiled_at_utc": "2026-05-01T11:23:24.167346Z",
   "record_id": "public_doctrine_l1_d6399b740727566f",
   "schema_version": "public_doctrine_l1_index_v1",
   "source_path": "nodes/safety-boundary.md",
@@ -59,7 +59,7 @@ public release beyond repository contents approved
 
 <<<PUBLIC_DOCTRINE_L1_BOUNDARY_JSON>>>
 {
-  "private_payload_included": false,
+  "extension_payload_included": false,
   "projection_class": "public_safe_index",
   "semantic_embedding_deferred": true,
   "status": "ACTIVE"
@@ -83,8 +83,8 @@ public release beyond repository contents approved
 {
   "certificate_policy": "payload_sha256_excluding_this_certificate",
   "companion_path": ".doctrine-index/nodes__safety-boundary.md.doctrine",
-  "compiled_at_utc": "2026-05-01T00:17:36.348838Z",
-  "payload_sha256_excluding_this_certificate": "d48491816aba47c6440bc3d0f735f92872a1e0d0d20f8624f74df47f34a19202",
+  "compiled_at_utc": "2026-05-01T11:23:24.167346Z",
+  "payload_sha256_excluding_this_certificate": "bc0c33c285661c14561f6fbf073e73b6d4eaa379744de5d53425fa5dff0c7282",
   "source_path": "nodes/safety-boundary.md",
   "source_sha256": "d6399b740727566f868d80100a46fef83ce9c4c5527630354acff8828c4196d5",
   "status": "ACTIVE"

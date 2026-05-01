@@ -14,7 +14,7 @@ validation_state: generated_unverified
 Public-safe L1 `.doctrine` companion envelope for a DoctrineOS repository file.
 
 ## Usage
-Use this companion to verify source path, SHA-256, size, projection boundary, and filetype envelope integrity without exposing private implementation payload.
+Use this companion to verify source path, SHA-256, size, projection boundary, and filetype envelope integrity without exposing implementation-specific payloads.
 
 ## ID
 public_doctrine_l1_ab5e67890234cbf9
@@ -32,14 +32,14 @@ public-safe L1 companion envelope generated
 
 ```text
 semantic extraction complete
-private Xxen.soul payload present
+implementation-specific payload present
 public release beyond repository contents approved
 ```
 
 <<<PUBLIC_DOCTRINE_L1_MANIFEST_JSON>>>
 {
   "companion_path": ".doctrine-index/SPEC.md.doctrine",
-  "compiled_at_utc": "2026-05-01T00:17:36.335986Z",
+  "compiled_at_utc": "2026-05-01T11:23:24.150818Z",
   "record_id": "public_doctrine_l1_ab5e67890234cbf9",
   "schema_version": "public_doctrine_l1_index_v1",
   "source_path": "SPEC.md",
@@ -59,7 +59,7 @@ public release beyond repository contents approved
 
 <<<PUBLIC_DOCTRINE_L1_BOUNDARY_JSON>>>
 {
-  "private_payload_included": false,
+  "extension_payload_included": false,
   "projection_class": "public_safe_index",
   "semantic_embedding_deferred": true,
   "status": "ACTIVE"
@@ -83,8 +83,8 @@ public release beyond repository contents approved
 {
   "certificate_policy": "payload_sha256_excluding_this_certificate",
   "companion_path": ".doctrine-index/SPEC.md.doctrine",
-  "compiled_at_utc": "2026-05-01T00:17:36.335986Z",
-  "payload_sha256_excluding_this_certificate": "ea52e15efcf756589e680107cf494c2bdf98421bdb4a35bd05744816d219d2cf",
+  "compiled_at_utc": "2026-05-01T11:23:24.150818Z",
+  "payload_sha256_excluding_this_certificate": "5ca6a174733bd4ad67fa3c39cb0a311bc3e149b73556fb00fd0667ba6f93402c",
   "source_path": "SPEC.md",
   "source_sha256": "ab5e67890234cbf9ba99b80a8fcc6ab84ef2ee7ad704a88521763156860ab2c7",
   "status": "ACTIVE"

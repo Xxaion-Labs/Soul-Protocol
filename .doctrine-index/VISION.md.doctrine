@@ -14,7 +14,7 @@ validation_state: generated_unverified
 Public-safe L1 `.doctrine` companion envelope for a DoctrineOS repository file.
 
 ## Usage
-Use this companion to verify source path, SHA-256, size, projection boundary, and filetype envelope integrity without exposing private implementation payload.
+Use this companion to verify source path, SHA-256, size, projection boundary, and filetype envelope integrity without exposing implementation-specific payloads.
 
 ## ID
 public_doctrine_l1_52ebdd286f0c76a0
@@ -32,14 +32,14 @@ public-safe L1 companion envelope generated
 
 ```text
 semantic extraction complete
-private Xxen.soul payload present
+implementation-specific payload present
 public release beyond repository contents approved
 ```
 
 <<<PUBLIC_DOCTRINE_L1_MANIFEST_JSON>>>
 {
   "companion_path": ".doctrine-index/VISION.md.doctrine",
-  "compiled_at_utc": "2026-05-01T00:17:36.336453Z",
+  "compiled_at_utc": "2026-05-01T11:23:24.151922Z",
   "record_id": "public_doctrine_l1_52ebdd286f0c76a0",
   "schema_version": "public_doctrine_l1_index_v1",
   "source_path": "VISION.md",
@@ -59,7 +59,7 @@ public release beyond repository contents approved
 
 <<<PUBLIC_DOCTRINE_L1_BOUNDARY_JSON>>>
 {
-  "private_payload_included": false,
+  "extension_payload_included": false,
   "projection_class": "public_safe_index",
   "semantic_embedding_deferred": true,
   "status": "ACTIVE"
@@ -83,8 +83,8 @@ public release beyond repository contents approved
 {
   "certificate_policy": "payload_sha256_excluding_this_certificate",
   "companion_path": ".doctrine-index/VISION.md.doctrine",
-  "compiled_at_utc": "2026-05-01T00:17:36.336453Z",
-  "payload_sha256_excluding_this_certificate": "2cd21c553e4707af8c2502502c5b34df497fbac5bd218a4eb8768a5d0a12af61",
+  "compiled_at_utc": "2026-05-01T11:23:24.151922Z",
+  "payload_sha256_excluding_this_certificate": "9683323a9032ed5627c6b114856913e1af32e2249750ae26867a4ea32e2102a8",
   "source_path": "VISION.md",
   "source_sha256": "52ebdd286f0c76a04a7f994152b03e8f225269fc7a858c30772ec4a3d7a1e36c",
   "status": "ACTIVE"

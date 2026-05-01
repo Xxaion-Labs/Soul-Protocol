@@ -1,14 +1,14 @@
 DOCTRINE FILE
 version: 1.0.0
-body_id: public_doctrine_l1_2bf3ac62019cec3b
+body_id: public_doctrine_l1_1acfdd3df27d45b7
 schema_version: public_doctrine_l1_index_v1
 record_type: public_repo_file_companion
-source_path: nodes/anti-drift.md
-source_sha256: 2bf3ac62019cec3b9aae66933a4568f758cf15add53e05df03a9749e141a4f17
+source_path: tools/singularity_sweep.py
+source_sha256: 1acfdd3df27d45b700c1d3c2a3570273752c8c6a18f9f37684a4fe7906846f56
 projection_class: public_safe_index
 validation_state: generated_unverified
 
-# Public Doctrine L1 Companion — `nodes/anti-drift.md`
+# Public Doctrine L1 Companion — `tools/singularity_sweep.py`
 
 ## Definition
 Public-safe L1 `.doctrine` companion envelope for a DoctrineOS repository file.
@@ -17,7 +17,7 @@ Public-safe L1 `.doctrine` companion envelope for a DoctrineOS repository file.
 Use this companion to verify source path, SHA-256, size, projection boundary, and filetype envelope integrity without exposing implementation-specific payloads.
 
 ## ID
-public_doctrine_l1_2bf3ac62019cec3b
+public_doctrine_l1_1acfdd3df27d45b7
 
 ## Claims supported
 
@@ -38,11 +38,11 @@ public release beyond repository contents approved
 
 <<<PUBLIC_DOCTRINE_L1_MANIFEST_JSON>>>
 {
-  "companion_path": ".doctrine-index/nodes__anti-drift.md.doctrine",
-  "compiled_at_utc": "2026-05-01T11:23:24.164862Z",
-  "record_id": "public_doctrine_l1_2bf3ac62019cec3b",
+  "companion_path": ".doctrine-index/tools__singularity_sweep.py.doctrine",
+  "compiled_at_utc": "2026-05-01T11:23:24.181842Z",
+  "record_id": "public_doctrine_l1_1acfdd3df27d45b7",
   "schema_version": "public_doctrine_l1_index_v1",
-  "source_path": "nodes/anti-drift.md",
+  "source_path": "tools/singularity_sweep.py",
   "status": "ACTIVE"
 }
 <<<END_PUBLIC_DOCTRINE_L1_MANIFEST_JSON>>>
@@ -50,9 +50,9 @@ public release beyond repository contents approved
 <<<PUBLIC_DOCTRINE_L1_SOURCE_JSON>>>
 {
   "source_embedded": false,
-  "source_path": "nodes/anti-drift.md",
-  "source_sha256": "2bf3ac62019cec3b9aae66933a4568f758cf15add53e05df03a9749e141a4f17",
-  "source_size_bytes": 323,
+  "source_path": "tools/singularity_sweep.py",
+  "source_sha256": "1acfdd3df27d45b700c1d3c2a3570273752c8c6a18f9f37684a4fe7906846f56",
+  "source_size_bytes": 3818,
   "status": "ACTIVE"
 }
 <<<END_PUBLIC_DOCTRINE_L1_SOURCE_JSON>>>
@@ -82,11 +82,11 @@ public release beyond repository contents approved
 <<<PUBLIC_DOCTRINE_L1_CERTIFICATE_JSON>>>
 {
   "certificate_policy": "payload_sha256_excluding_this_certificate",
-  "companion_path": ".doctrine-index/nodes__anti-drift.md.doctrine",
-  "compiled_at_utc": "2026-05-01T11:23:24.164862Z",
-  "payload_sha256_excluding_this_certificate": "b9a6267b941c53346acc4a4674ad1f3d9bd6b7aac78ce033995d9350526f2601",
-  "source_path": "nodes/anti-drift.md",
-  "source_sha256": "2bf3ac62019cec3b9aae66933a4568f758cf15add53e05df03a9749e141a4f17",
+  "companion_path": ".doctrine-index/tools__singularity_sweep.py.doctrine",
+  "compiled_at_utc": "2026-05-01T11:23:24.181842Z",
+  "payload_sha256_excluding_this_certificate": "1b82362e91c03e70a2c7940b37456bd44965bbf426192d6e86574e3ab152d96f",
+  "source_path": "tools/singularity_sweep.py",
+  "source_sha256": "1acfdd3df27d45b700c1d3c2a3570273752c8c6a18f9f37684a4fe7906846f56",
   "status": "ACTIVE"
 }
 <<<END_PUBLIC_DOCTRINE_L1_CERTIFICATE_JSON>>>

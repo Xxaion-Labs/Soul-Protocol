@@ -14,7 +14,7 @@ validation_state: generated_unverified
 Public-safe L1 `.doctrine` companion envelope for a DoctrineOS repository file.
 
 ## Usage
-Use this companion to verify source path, SHA-256, size, projection boundary, and filetype envelope integrity without exposing private implementation payload.
+Use this companion to verify source path, SHA-256, size, projection boundary, and filetype envelope integrity without exposing implementation-specific payloads.
 
 ## ID
 public_doctrine_l1_640a0b059f22db03
@@ -32,14 +32,14 @@ public-safe L1 companion envelope generated
 
 ```text
 semantic extraction complete
-private Xxen.soul payload present
+implementation-specific payload present
 public release beyond repository contents approved
 ```
 
 <<<PUBLIC_DOCTRINE_L1_MANIFEST_JSON>>>
 {
   "companion_path": ".doctrine-index/nodes__concise-response.md.doctrine",
-  "compiled_at_utc": "2026-05-01T00:17:36.347780Z",
+  "compiled_at_utc": "2026-05-01T11:23:24.166155Z",
   "record_id": "public_doctrine_l1_640a0b059f22db03",
   "schema_version": "public_doctrine_l1_index_v1",
   "source_path": "nodes/concise-response.md",
@@ -59,7 +59,7 @@ public release beyond repository contents approved
 
 <<<PUBLIC_DOCTRINE_L1_BOUNDARY_JSON>>>
 {
-  "private_payload_included": false,
+  "extension_payload_included": false,
   "projection_class": "public_safe_index",
   "semantic_embedding_deferred": true,
   "status": "ACTIVE"
@@ -83,8 +83,8 @@ public release beyond repository contents approved
 {
   "certificate_policy": "payload_sha256_excluding_this_certificate",
   "companion_path": ".doctrine-index/nodes__concise-response.md.doctrine",
-  "compiled_at_utc": "2026-05-01T00:17:36.347780Z",
-  "payload_sha256_excluding_this_certificate": "45983fc6739b857f84c9311bbbd9339bb492e7bcb3aba91853739cbe60bd7d46",
+  "compiled_at_utc": "2026-05-01T11:23:24.166155Z",
+  "payload_sha256_excluding_this_certificate": "16687209a7daa8ceeb84ef5af7d3bf15e7342f142d36a7c925f1b3da27dc8d86",
   "source_path": "nodes/concise-response.md",
   "source_sha256": "640a0b059f22db03637936bda84aa1758c1541ca66e4e56985aabfcef73dec1d",
   "status": "ACTIVE"

@@ -14,7 +14,7 @@ validation_state: generated_unverified
 Public-safe L1 `.doctrine` companion envelope for a DoctrineOS repository file.
 
 ## Usage
-Use this companion to verify source path, SHA-256, size, projection boundary, and filetype envelope integrity without exposing private implementation payload.
+Use this companion to verify source path, SHA-256, size, projection boundary, and filetype envelope integrity without exposing implementation-specific payloads.
 
 ## ID
 public_doctrine_l1_fc435c2ab085d422
@@ -32,14 +32,14 @@ public-safe L1 companion envelope generated
 
 ```text
 semantic extraction complete
-private Xxen.soul payload present
+implementation-specific payload present
 public release beyond repository contents approved
 ```
 
 <<<PUBLIC_DOCTRINE_L1_MANIFEST_JSON>>>
 {
   "companion_path": ".doctrine-index/examples__api_payload_adapter.py.doctrine",
-  "compiled_at_utc": "2026-05-01T00:17:36.344246Z",
+  "compiled_at_utc": "2026-05-01T11:23:24.161274Z",
   "record_id": "public_doctrine_l1_fc435c2ab085d422",
   "schema_version": "public_doctrine_l1_index_v1",
   "source_path": "examples/api_payload_adapter.py",
@@ -59,7 +59,7 @@ public release beyond repository contents approved
 
 <<<PUBLIC_DOCTRINE_L1_BOUNDARY_JSON>>>
 {
-  "private_payload_included": false,
+  "extension_payload_included": false,
   "projection_class": "public_safe_index",
   "semantic_embedding_deferred": true,
   "status": "ACTIVE"
@@ -83,8 +83,8 @@ public release beyond repository contents approved
 {
   "certificate_policy": "payload_sha256_excluding_this_certificate",
   "companion_path": ".doctrine-index/examples__api_payload_adapter.py.doctrine",
-  "compiled_at_utc": "2026-05-01T00:17:36.344246Z",
-  "payload_sha256_excluding_this_certificate": "95333d1e2f8fef80be136001426e7e0f8efea9a86a3046883bae64fb01a16652",
+  "compiled_at_utc": "2026-05-01T11:23:24.161274Z",
+  "payload_sha256_excluding_this_certificate": "cc791e756940214e17b9aa71262a1733fb2672247b57a73ebd4b5c26c826abaa",
   "source_path": "examples/api_payload_adapter.py",
   "source_sha256": "fc435c2ab085d422a24eadcdf45faec080b76fcd32971d82e5b740d80f1054d9",
   "status": "ACTIVE"

@@ -14,7 +14,7 @@ validation_state: generated_unverified
 Public-safe L1 `.doctrine` companion envelope for a DoctrineOS repository file.
 
 ## Usage
-Use this companion to verify source path, SHA-256, size, projection boundary, and filetype envelope integrity without exposing private implementation payload.
+Use this companion to verify source path, SHA-256, size, projection boundary, and filetype envelope integrity without exposing implementation-specific payloads.
 
 ## ID
 public_doctrine_l1_5fb324e6c3593b3b
@@ -32,14 +32,14 @@ public-safe L1 companion envelope generated
 
 ```text
 semantic extraction complete
-private Xxen.soul payload present
+implementation-specific payload present
 public release beyond repository contents approved
 ```
 
 <<<PUBLIC_DOCTRINE_L1_MANIFEST_JSON>>>
 {
   "companion_path": ".doctrine-index/tools__validate.py.doctrine",
-  "compiled_at_utc": "2026-05-01T00:17:36.358558Z",
+  "compiled_at_utc": "2026-05-01T11:23:24.182440Z",
   "record_id": "public_doctrine_l1_5fb324e6c3593b3b",
   "schema_version": "public_doctrine_l1_index_v1",
   "source_path": "tools/validate.py",
@@ -59,7 +59,7 @@ public release beyond repository contents approved
 
 <<<PUBLIC_DOCTRINE_L1_BOUNDARY_JSON>>>
 {
-  "private_payload_included": false,
+  "extension_payload_included": false,
   "projection_class": "public_safe_index",
   "semantic_embedding_deferred": true,
   "status": "ACTIVE"
@@ -83,8 +83,8 @@ public release beyond repository contents approved
 {
   "certificate_policy": "payload_sha256_excluding_this_certificate",
   "companion_path": ".doctrine-index/tools__validate.py.doctrine",
-  "compiled_at_utc": "2026-05-01T00:17:36.358558Z",
-  "payload_sha256_excluding_this_certificate": "31e29575d11ea0ba84398979b657d7339c14db27d1c3c330900280ab8f1c9336",
+  "compiled_at_utc": "2026-05-01T11:23:24.182440Z",
+  "payload_sha256_excluding_this_certificate": "bfc5f060465900fdd89a42816aece0bb43947d059d739f0f737fcf36f0e5865e",
   "source_path": "tools/validate.py",
   "source_sha256": "5fb324e6c3593b3b908949ea98e52637b5e5c57c9e8d1aa1c29fa2d28d205fd4",
   "status": "ACTIVE"
