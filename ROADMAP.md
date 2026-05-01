@@ -1,22 +1,30 @@
 # Roadmap
 
-DoctrineOS is the public AI-native operating system prototype built on Doctrine Protocol.
+DoctrineOS is the public AI-native operating system prototype built around mountable tesseracts.
 
-The roadmap moves from protocol foundation to userland prototype, then into local runtime, bootable environment, AI-native desktop, and deeper operating-system integration.
+```text
+⧉
+```
 
-## Phase 0: Protocol Foundation
+`⧉` is the object. In prose, call it **a tesseract**.
+
+The roadmap moves from public compatibility surface to userland prototype, then into local runtime, bootable environment, AI-native desktop, and deeper operating-system integration.
+
+## Phase 0: Public Compatibility Foundation
 
 Status: complete.
 
-- Doctrine Protocol SDK
+- public `.doctrine` compatibility surface
+- SDK and CLI
 - CLI for mount, validate, inspect, and registry build
 - parser and validator
 - mount receipts with context hashes
-- public standard doctrine template
+- public standard template
 - starter public nodes
 - generated node registry
 - validation workflow
 - AGPLv3-or-later anti-capture license
+- public `⧉` standard
 
 ## Phase 1: Userland Prototype
 
@@ -27,7 +35,7 @@ Goal: prove the control spine before building a full OS image.
 Complete:
 
 - DoctrineOS shell
-- doctrine profile loader
+- profile loader
 - mount receipt display
 - safe command router
 - stub adapters
@@ -40,7 +48,7 @@ Complete:
 The current spine is:
 
 ```text
-doctrine profile -> mount -> command -> capability -> permission -> adapter -> receipt -> state
+.doctrine file -> mount -> command -> capability -> permission -> adapter -> receipt -> state
 ```
 
 ## Phase 2: Local Runtime
@@ -77,11 +85,11 @@ Planned:
 
 ## Phase 4: AI-Native Desktop
 
-Goal: make the whole environment doctrine-aware.
+Goal: make the whole environment tesseract-aware.
 
 Planned:
 
-- doctrine-aware launcher
+- tesseract-aware launcher
 - app and workflow registry
 - node package manager
 - visible receipts
@@ -111,3 +119,4 @@ Every public release should remain:
 - non-autonomous
 - AGPLv3-or-later
 - aligned with DoctrineOS as public-good infrastructure
+- bound to the public meaning of `⧉ = a tesseract`
