@@ -1,16 +1,137 @@
 import argparse
 import json
 from pathlib import Path
+from typing import Any, Dict, List
 
 from .doctrine import Doctrine
 
 
+STATUS_PASS = "PASS"
+STATUS_FAIL = "FAIL"
+STATUS_WARN = "WARN"
+STATUS_BLOCKED = "BLOCKED"
+
+
+def status_word(ok: bool) -> str:
+    return STATUS_PASS if ok else STATUS_FAIL
+
+
+def collect_validation(doctrine: Doctrine) -> Dict[str, Any]:
+    diagnostics = doctrine.filetype_diagnostics or {}
+    validation_errors = doctrine.validate()
+    sentinel_errors = list(diagnostics.get("sentinel_errors", []))
+    all_errors: List[Any] = list(validation_errors) + sentinel_errors
+    ok = not validation_errors and not sentinel_errors
+    return {
+        "ok": ok,
+        "validation_errors": validation_errors,
+        "sentinel_errors": sentinel_errors,
+        "all_errors": all_errors,
+        "filetype_diagnostics": diagnostics,
+    }
+
+
+def doctor_payload(path: str, doctrine: Doctrine) -> Dict[str, Any]:
+    validation = collect_validation(doctrine)
+    return {
+        "ok": validation["ok"],
+        "path": path,
+        "name": doctrine.name,
+        "id": doctrine.id,
+        "validation_errors": validation["validation_errors"],
+        "filetype_diagnostics": validation["filetype_diagnostics"],
+    }
+
+
+def markdown_report(path: str, doctrine: Doctrine, mode: str) -> str:
+    validation = collect_validation(doctrine)
+    diagnostics = validation["filetype_diagnostics"]
+    sentinels = diagnostics.get("sentinels", []) or []
+    sentinel_errors = validation["sentinel_errors"]
+    validation_errors = validation["validation_errors"]
+    ok = bool(validation["ok"])
+
+    lines = [
+        f"# DoctrineOS {mode.title()} Report — `{path}`",
+        "",
+        "## Summary",
+        "",
+        f"- overall: **{status_word(ok)}**",
+        f"- filetype: `{diagnostics.get('filetype', '.doctrine')}`",
+        f"- name: `{doctrine.name}`",
+        f"- id: `{doctrine.id}`",
+        f"- sentinel_count: `{diagnostics.get('sentinel_count', 0)}`",
+        f"- sentinel_json: **{status_word(bool(diagnostics.get('sentinel_json_ok', True)))}**",
+        "",
+        "## Checks",
+        "",
+        f"- {status_word(not validation_errors)} `doctrine_validation`",
+        f"- {status_word(not sentinel_errors)} `sentinel_diagnostics`",
+        f"- {status_word(bool(diagnostics.get('utf8_text_supplied', True)))} `utf8_text_supplied`",
+        f"- {STATUS_WARN} `private_xxen_requirements_not_enforced_public_subset`",
+        "",
+        "## Sentinels",
+        "",
+    ]
+
+    if sentinels:
+        for sentinel in sentinels:
+            name = sentinel.get("name", "UNKNOWN_JSON")
+            json_ok = bool(sentinel.get("json_ok"))
+            lines.append(f"- {status_word(json_ok)} `{name}` lines `{sentinel.get('start_line')}-{sentinel.get('end_line')}`")
+    else:
+        lines.append(f"- {STATUS_WARN} no JSON sentinels found")
+
+    lines += ["", "## Errors", ""]
+    if validation_errors:
+        for item in validation_errors:
+            lines.append(f"- {STATUS_FAIL} validation: `{item}`")
+    if sentinel_errors:
+        for item in sentinel_errors:
+            lines.append(f"- {STATUS_FAIL} sentinel: `{item}`")
+    if not validation_errors and not sentinel_errors:
+        lines.append("- none")
+
+    lines += [
+        "",
+        "## Proof boundaries",
+        "",
+        "### What this proves",
+        "",
+        "- Public DoctrineOS parsed the file as UTF-8 text.",
+        "- Markdown sections and metadata were inspected.",
+        "- Public JSON sentinel diagnostics were evaluated.",
+        "- Public mount/inspect compatibility was checked inside the capped public subset.",
+        "",
+        "### What this does not prove",
+        "",
+        "- It does not enforce private Xxen sentinel anatomy.",
+        "- It does not prove private kernel payload validity.",
+        "- It does not prove `.soul` completion.",
+        "- It does not approve private material for public release.",
+        "",
+        "## Next safe actions",
+        "",
+    ]
+    if ok:
+        lines.append("- Continue with public-safe mount, inspect, or Workbench projection.")
+    else:
+        lines.append("- Repair the listed FAIL diagnostics before using this file as a valid public fixture.")
+    return "\n".join(lines) + "\n"
+
+
+def emit_report(payload: Dict[str, Any], markdown: str, fmt: str) -> None:
+    if fmt == "markdown":
+        print(markdown, end="")
+    else:
+        print(json.dumps(payload, indent=2))
+
+
 def cmd_validate(args):
     doctrine = Doctrine.load(args.path)
-    errors = doctrine.validate()
-    diagnostics = doctrine.filetype_diagnostics or {}
-    sentinel_errors = diagnostics.get("sentinel_errors", [])
-    all_errors = list(errors) + ["sentinel error: " + str(item) for item in sentinel_errors]
+    validation = collect_validation(doctrine)
+    diagnostics = validation["filetype_diagnostics"]
+    all_errors = list(validation["validation_errors"]) + ["sentinel error: " + str(item) for item in validation["sentinel_errors"]]
     if all_errors:
         print(json.dumps({"valid": False, "errors": all_errors, "filetype_diagnostics": diagnostics}, indent=2))
         return 1
@@ -27,25 +148,23 @@ def cmd_mount(args):
 
 def cmd_inspect(args):
     doctrine = Doctrine.load(args.path)
-    print(json.dumps(doctrine.to_dict(), indent=2))
-    return 0
+    payload = doctrine.to_dict()
+    validation = collect_validation(doctrine)
+    payload["inspect_status"] = {
+        "ok": validation["ok"],
+        "status": status_word(validation["ok"]),
+        "validation_errors": validation["validation_errors"],
+        "sentinel_errors": validation["sentinel_errors"],
+    }
+    emit_report(payload, markdown_report(args.path, doctrine, "inspect"), args.format)
+    return 0 if validation["ok"] else 1
 
 
 def cmd_doctor(args):
     doctrine = Doctrine.load(args.path)
-    diagnostics = doctrine.filetype_diagnostics or {}
-    errors = doctrine.validate()
-    sentinel_errors = diagnostics.get("sentinel_errors", [])
-    ok = not errors and not sentinel_errors
-    print(json.dumps({
-        "ok": ok,
-        "path": args.path,
-        "name": doctrine.name,
-        "id": doctrine.id,
-        "validation_errors": errors,
-        "filetype_diagnostics": diagnostics,
-    }, indent=2))
-    return 0 if ok else 1
+    payload = doctor_payload(args.path, doctrine)
+    emit_report(payload, markdown_report(args.path, doctrine, "doctor"), args.format)
+    return 0 if payload["ok"] else 1
 
 
 def cmd_registry_build(args):
@@ -85,10 +204,12 @@ def build_parser():
 
     inspect = sub.add_parser("inspect", help="Inspect parsed doctrine data")
     inspect.add_argument("path")
+    inspect.add_argument("--format", choices=["json", "markdown"], default="json")
     inspect.set_defaults(func=cmd_inspect)
 
     doctor = sub.add_parser("doctor", help="Inspect .doctrine filetype diagnostics")
     doctor.add_argument("path")
+    doctor.add_argument("--format", choices=["json", "markdown"], default="json")
     doctor.set_defaults(func=cmd_doctor)
 
     registry = sub.add_parser("registry", help="Registry commands")
