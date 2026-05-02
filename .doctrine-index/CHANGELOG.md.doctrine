@@ -1,10 +1,10 @@
 DOCTRINE FILE
 version: 1.0.0
-body_id: public_doctrine_l1_8fde2af7e1e0e40e
+body_id: public_doctrine_l1_057d853c62654e9d
 schema_version: public_doctrine_l1_index_v1
 record_type: public_repo_file_companion
 source_path: CHANGELOG.md
-source_sha256: 8fde2af7e1e0e40e8f879e55e1d60b2daeffb8ff97bbe7f9b2c5e0215d029899
+source_sha256: 057d853c62654e9d6d55a508b51fb427b5915022d3743624664878ee1bc2eb9a
 projection_class: public_safe_index
 validation_state: generated_unverified
 
@@ -17,7 +17,7 @@ Public-safe L1 `.doctrine` companion envelope for a DoctrineOS repository file.
 Use this companion to verify source path, SHA-256, size, projection boundary, and filetype envelope integrity without exposing implementation-specific payloads.
 
 ## ID
-public_doctrine_l1_8fde2af7e1e0e40e
+public_doctrine_l1_057d853c62654e9d
 
 ## Claims supported
 
@@ -39,8 +39,8 @@ public release beyond repository contents approved
 <<<PUBLIC_DOCTRINE_L1_MANIFEST_JSON>>>
 {
   "companion_path": ".doctrine-index/CHANGELOG.md.doctrine",
-  "compiled_at_utc": "2026-05-01T19:55:09.598568Z",
-  "record_id": "public_doctrine_l1_8fde2af7e1e0e40e",
+  "compiled_at_utc": "2026-05-02T04:07:02.855267Z",
+  "record_id": "public_doctrine_l1_057d853c62654e9d",
   "schema_version": "public_doctrine_l1_index_v1",
   "source_path": "CHANGELOG.md",
   "status": "ACTIVE"
@@ -51,8 +51,8 @@ public release beyond repository contents approved
 {
   "source_embedded": false,
   "source_path": "CHANGELOG.md",
-  "source_sha256": "8fde2af7e1e0e40e8f879e55e1d60b2daeffb8ff97bbe7f9b2c5e0215d029899",
-  "source_size_bytes": 2155,
+  "source_sha256": "057d853c62654e9d6d55a508b51fb427b5915022d3743624664878ee1bc2eb9a",
+  "source_size_bytes": 1977,
   "status": "ACTIVE"
 }
 <<<END_PUBLIC_DOCTRINE_L1_SOURCE_JSON>>>
@@ -83,10 +83,10 @@ public release beyond repository contents approved
 {
   "certificate_policy": "payload_sha256_excluding_this_certificate",
   "companion_path": ".doctrine-index/CHANGELOG.md.doctrine",
-  "compiled_at_utc": "2026-05-01T19:55:09.598568Z",
-  "payload_sha256_excluding_this_certificate": "12e4ef565ad7f1606e5e681ee8fe05a63ec00ce7229c752741d53976594dd1e8",
+  "compiled_at_utc": "2026-05-02T04:07:02.855267Z",
+  "payload_sha256_excluding_this_certificate": "00df858d5768254a3d93fabc8fc5dea3836e3371bd08d9400c8a094e2f79db4b",
   "source_path": "CHANGELOG.md",
-  "source_sha256": "8fde2af7e1e0e40e8f879e55e1d60b2daeffb8ff97bbe7f9b2c5e0215d029899",
+  "source_sha256": "057d853c62654e9d6d55a508b51fb427b5915022d3743624664878ee1bc2eb9a",
   "status": "ACTIVE"
 }
 <<<END_PUBLIC_DOCTRINE_L1_CERTIFICATE_JSON>>>

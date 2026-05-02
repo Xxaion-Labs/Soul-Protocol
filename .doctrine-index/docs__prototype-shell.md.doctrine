@@ -1,10 +1,10 @@
 DOCTRINE FILE
 version: 1.0.0
-body_id: public_doctrine_l1_70cf75737e3e9139
+body_id: public_doctrine_l1_eb8704a8879e37b4
 schema_version: public_doctrine_l1_index_v1
 record_type: public_repo_file_companion
 source_path: docs/prototype-shell.md
-source_sha256: 70cf75737e3e9139c073daa7a76c47ac4e5b95305ad2f0ed4e550d9b781b93e0
+source_sha256: eb8704a8879e37b458e1a47bb2f7c0037461c0194cd0d854c79a6bdd0cd946fe
 projection_class: public_safe_index
 validation_state: generated_unverified
 
@@ -17,7 +17,7 @@ Public-safe L1 `.doctrine` companion envelope for a DoctrineOS repository file.
 Use this companion to verify source path, SHA-256, size, projection boundary, and filetype envelope integrity without exposing implementation-specific payloads.
 
 ## ID
-public_doctrine_l1_70cf75737e3e9139
+public_doctrine_l1_eb8704a8879e37b4
 
 ## Claims supported
 
@@ -39,8 +39,8 @@ public release beyond repository contents approved
 <<<PUBLIC_DOCTRINE_L1_MANIFEST_JSON>>>
 {
   "companion_path": ".doctrine-index/docs__prototype-shell.md.doctrine",
-  "compiled_at_utc": "2026-05-01T19:55:09.605400Z",
-  "record_id": "public_doctrine_l1_70cf75737e3e9139",
+  "compiled_at_utc": "2026-05-02T04:07:02.863718Z",
+  "record_id": "public_doctrine_l1_eb8704a8879e37b4",
   "schema_version": "public_doctrine_l1_index_v1",
   "source_path": "docs/prototype-shell.md",
   "status": "ACTIVE"
@@ -51,8 +51,8 @@ public release beyond repository contents approved
 {
   "source_embedded": false,
   "source_path": "docs/prototype-shell.md",
-  "source_sha256": "70cf75737e3e9139c073daa7a76c47ac4e5b95305ad2f0ed4e550d9b781b93e0",
-  "source_size_bytes": 1248,
+  "source_sha256": "eb8704a8879e37b458e1a47bb2f7c0037461c0194cd0d854c79a6bdd0cd946fe",
+  "source_size_bytes": 679,
   "status": "ACTIVE"
 }
 <<<END_PUBLIC_DOCTRINE_L1_SOURCE_JSON>>>
@@ -83,10 +83,10 @@ public release beyond repository contents approved
 {
   "certificate_policy": "payload_sha256_excluding_this_certificate",
   "companion_path": ".doctrine-index/docs__prototype-shell.md.doctrine",
-  "compiled_at_utc": "2026-05-01T19:55:09.605400Z",
-  "payload_sha256_excluding_this_certificate": "3f5d361ef691b421140c86250e07a913a646e53a2caf0fd09beab67356f3a910",
+  "compiled_at_utc": "2026-05-02T04:07:02.863718Z",
+  "payload_sha256_excluding_this_certificate": "2f93fca5069f244a2cdb7bb197d4b79c088d3828b85c95e37d4404ab09b489f8",
   "source_path": "docs/prototype-shell.md",
-  "source_sha256": "70cf75737e3e9139c073daa7a76c47ac4e5b95305ad2f0ed4e550d9b781b93e0",
+  "source_sha256": "eb8704a8879e37b458e1a47bb2f7c0037461c0194cd0d854c79a6bdd0cd946fe",
   "status": "ACTIVE"
 }
 <<<END_PUBLIC_DOCTRINE_L1_CERTIFICATE_JSON>>>

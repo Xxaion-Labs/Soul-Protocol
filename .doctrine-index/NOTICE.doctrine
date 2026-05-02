@@ -1,10 +1,10 @@
 DOCTRINE FILE
 version: 1.0.0
-body_id: public_doctrine_l1_8f3f80655b1e096c
+body_id: public_doctrine_l1_b1a6053cf2899f41
 schema_version: public_doctrine_l1_index_v1
 record_type: public_repo_file_companion
 source_path: NOTICE
-source_sha256: 8f3f80655b1e096cd52aaa29c09b53992707ea43f5cdccbf5a014f4c45aad878
+source_sha256: b1a6053cf2899f4183f06e4d7d2ca68655bfaeea1f6daf2b22045520effb67c8
 projection_class: public_safe_index
 validation_state: generated_unverified
 
@@ -17,7 +17,7 @@ Public-safe L1 `.doctrine` companion envelope for a DoctrineOS repository file.
 Use this companion to verify source path, SHA-256, size, projection boundary, and filetype envelope integrity without exposing implementation-specific payloads.
 
 ## ID
-public_doctrine_l1_8f3f80655b1e096c
+public_doctrine_l1_b1a6053cf2899f41
 
 ## Claims supported
 
@@ -39,8 +39,8 @@ public release beyond repository contents approved
 <<<PUBLIC_DOCTRINE_L1_MANIFEST_JSON>>>
 {
   "companion_path": ".doctrine-index/NOTICE.doctrine",
-  "compiled_at_utc": "2026-05-01T19:55:09.601983Z",
-  "record_id": "public_doctrine_l1_8f3f80655b1e096c",
+  "compiled_at_utc": "2026-05-02T04:07:02.859699Z",
+  "record_id": "public_doctrine_l1_b1a6053cf2899f41",
   "schema_version": "public_doctrine_l1_index_v1",
   "source_path": "NOTICE",
   "status": "ACTIVE"
@@ -51,8 +51,8 @@ public release beyond repository contents approved
 {
   "source_embedded": false,
   "source_path": "NOTICE",
-  "source_sha256": "8f3f80655b1e096cd52aaa29c09b53992707ea43f5cdccbf5a014f4c45aad878",
-  "source_size_bytes": 457,
+  "source_sha256": "b1a6053cf2899f4183f06e4d7d2ca68655bfaeea1f6daf2b22045520effb67c8",
+  "source_size_bytes": 437,
   "status": "ACTIVE"
 }
 <<<END_PUBLIC_DOCTRINE_L1_SOURCE_JSON>>>
@@ -83,10 +83,10 @@ public release beyond repository contents approved
 {
   "certificate_policy": "payload_sha256_excluding_this_certificate",
   "companion_path": ".doctrine-index/NOTICE.doctrine",
-  "compiled_at_utc": "2026-05-01T19:55:09.601983Z",
-  "payload_sha256_excluding_this_certificate": "fc2b9973ed16b418263a7e53aa79ada3b6d49e8b7acf7674a2be48aa0c7b5388",
+  "compiled_at_utc": "2026-05-02T04:07:02.859699Z",
+  "payload_sha256_excluding_this_certificate": "fadea5df8a86db6067698ba232de99a043ef493242ba56d5d5a6cd76b1a18eea",
   "source_path": "NOTICE",
-  "source_sha256": "8f3f80655b1e096cd52aaa29c09b53992707ea43f5cdccbf5a014f4c45aad878",
+  "source_sha256": "b1a6053cf2899f4183f06e4d7d2ca68655bfaeea1f6daf2b22045520effb67c8",
   "status": "ACTIVE"
 }
 <<<END_PUBLIC_DOCTRINE_L1_CERTIFICATE_JSON>>>

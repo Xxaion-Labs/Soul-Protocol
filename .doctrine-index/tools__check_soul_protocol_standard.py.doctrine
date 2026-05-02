@@ -1,14 +1,14 @@
 DOCTRINE FILE
 version: 1.0.0
-body_id: public_doctrine_l1_570dff3ef6f700f8
+body_id: public_doctrine_l1_28b29a840dc897da
 schema_version: public_doctrine_l1_index_v1
 record_type: public_repo_file_companion
-source_path: doctrineos/receipts.py
-source_sha256: 570dff3ef6f700f84c7145a35e8888d4de1a047ab99900363d11af2a1f9fe816
+source_path: tools/check_soul_protocol_standard.py
+source_sha256: 28b29a840dc897dae4f279469b31aab498562c0002bc5250f9da012d3c910e72
 projection_class: public_safe_index
 validation_state: generated_unverified
 
-# Public Doctrine L1 Companion — `doctrineos/receipts.py`
+# Public Doctrine L1 Companion — `tools/check_soul_protocol_standard.py`
 
 ## Definition
 Public-safe L1 `.doctrine` companion envelope for a DoctrineOS repository file.
@@ -17,7 +17,7 @@ Public-safe L1 `.doctrine` companion envelope for a DoctrineOS repository file.
 Use this companion to verify source path, SHA-256, size, projection boundary, and filetype envelope integrity without exposing implementation-specific payloads.
 
 ## ID
-public_doctrine_l1_570dff3ef6f700f8
+public_doctrine_l1_28b29a840dc897da
 
 ## Claims supported
 
@@ -38,11 +38,11 @@ public release beyond repository contents approved
 
 <<<PUBLIC_DOCTRINE_L1_MANIFEST_JSON>>>
 {
-  "companion_path": ".doctrine-index/doctrineos__receipts.py.doctrine",
-  "compiled_at_utc": "2026-05-02T04:07:02.868245Z",
-  "record_id": "public_doctrine_l1_570dff3ef6f700f8",
+  "companion_path": ".doctrine-index/tools__check_soul_protocol_standard.py.doctrine",
+  "compiled_at_utc": "2026-05-02T04:07:02.890024Z",
+  "record_id": "public_doctrine_l1_28b29a840dc897da",
   "schema_version": "public_doctrine_l1_index_v1",
-  "source_path": "doctrineos/receipts.py",
+  "source_path": "tools/check_soul_protocol_standard.py",
   "status": "ACTIVE"
 }
 <<<END_PUBLIC_DOCTRINE_L1_MANIFEST_JSON>>>
@@ -50,9 +50,9 @@ public release beyond repository contents approved
 <<<PUBLIC_DOCTRINE_L1_SOURCE_JSON>>>
 {
   "source_embedded": false,
-  "source_path": "doctrineos/receipts.py",
-  "source_sha256": "570dff3ef6f700f84c7145a35e8888d4de1a047ab99900363d11af2a1f9fe816",
-  "source_size_bytes": 1355,
+  "source_path": "tools/check_soul_protocol_standard.py",
+  "source_sha256": "28b29a840dc897dae4f279469b31aab498562c0002bc5250f9da012d3c910e72",
+  "source_size_bytes": 1907,
   "status": "ACTIVE"
 }
 <<<END_PUBLIC_DOCTRINE_L1_SOURCE_JSON>>>
@@ -82,11 +82,11 @@ public release beyond repository contents approved
 <<<PUBLIC_DOCTRINE_L1_CERTIFICATE_JSON>>>
 {
   "certificate_policy": "payload_sha256_excluding_this_certificate",
-  "companion_path": ".doctrine-index/doctrineos__receipts.py.doctrine",
-  "compiled_at_utc": "2026-05-02T04:07:02.868245Z",
-  "payload_sha256_excluding_this_certificate": "d518bb781b75f42cb528b3d324c27a596ba2be75369dfbfcd589a3183cdd9a3c",
-  "source_path": "doctrineos/receipts.py",
-  "source_sha256": "570dff3ef6f700f84c7145a35e8888d4de1a047ab99900363d11af2a1f9fe816",
+  "companion_path": ".doctrine-index/tools__check_soul_protocol_standard.py.doctrine",
+  "compiled_at_utc": "2026-05-02T04:07:02.890024Z",
+  "payload_sha256_excluding_this_certificate": "08e7d2cbff6424d8b16dab8a11450133c9a2720556553fa07c1d2f34d678c296",
+  "source_path": "tools/check_soul_protocol_standard.py",
+  "source_sha256": "28b29a840dc897dae4f279469b31aab498562c0002bc5250f9da012d3c910e72",
   "status": "ACTIVE"
 }
 <<<END_PUBLIC_DOCTRINE_L1_CERTIFICATE_JSON>>>

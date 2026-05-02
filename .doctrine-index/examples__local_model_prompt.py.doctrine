@@ -39,7 +39,7 @@ public release beyond repository contents approved
 <<<PUBLIC_DOCTRINE_L1_MANIFEST_JSON>>>
 {
   "companion_path": ".doctrine-index/examples__local_model_prompt.py.doctrine",
-  "compiled_at_utc": "2026-05-01T19:55:09.611723Z",
+  "compiled_at_utc": "2026-05-02T04:07:02.872328Z",
   "record_id": "public_doctrine_l1_311b8b4abfa7dde6",
   "schema_version": "public_doctrine_l1_index_v1",
   "source_path": "examples/local_model_prompt.py",
@@ -83,8 +83,8 @@ public release beyond repository contents approved
 {
   "certificate_policy": "payload_sha256_excluding_this_certificate",
   "companion_path": ".doctrine-index/examples__local_model_prompt.py.doctrine",
-  "compiled_at_utc": "2026-05-01T19:55:09.611723Z",
-  "payload_sha256_excluding_this_certificate": "8151aa579b8682331bc3b77519cae35769095846c1789892f663bcfc3d2efcf4",
+  "compiled_at_utc": "2026-05-02T04:07:02.872328Z",
+  "payload_sha256_excluding_this_certificate": "1af02c420928f88a81093a74979b705388384def79bfff73f6b44218bc593962",
   "source_path": "examples/local_model_prompt.py",
   "source_sha256": "311b8b4abfa7dde6c4ea586c9d8fedc205b0302b4c58a02b0b84e667306ca753",
   "status": "ACTIVE"

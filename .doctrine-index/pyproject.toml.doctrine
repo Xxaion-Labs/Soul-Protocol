@@ -1,10 +1,10 @@
 DOCTRINE FILE
 version: 1.0.0
-body_id: public_doctrine_l1_540a0cd1f9508a18
+body_id: public_doctrine_l1_8e20a52a52f39186
 schema_version: public_doctrine_l1_index_v1
 record_type: public_repo_file_companion
 source_path: pyproject.toml
-source_sha256: 540a0cd1f9508a18fcee476827547f9d53945f16e90f23daff2ce6bb0c79912d
+source_sha256: 8e20a52a52f3918660a7b92424a4ca54f288c7dc2d05880e98eefee1cec64978
 projection_class: public_safe_index
 validation_state: generated_unverified
 
@@ -17,7 +17,7 @@ Public-safe L1 `.doctrine` companion envelope for a DoctrineOS repository file.
 Use this companion to verify source path, SHA-256, size, projection boundary, and filetype envelope integrity without exposing implementation-specific payloads.
 
 ## ID
-public_doctrine_l1_540a0cd1f9508a18
+public_doctrine_l1_8e20a52a52f39186
 
 ## Claims supported
 
@@ -39,8 +39,8 @@ public release beyond repository contents approved
 <<<PUBLIC_DOCTRINE_L1_MANIFEST_JSON>>>
 {
   "companion_path": ".doctrine-index/pyproject.toml.doctrine",
-  "compiled_at_utc": "2026-05-01T19:55:09.617208Z",
-  "record_id": "public_doctrine_l1_540a0cd1f9508a18",
+  "compiled_at_utc": "2026-05-02T04:07:02.879690Z",
+  "record_id": "public_doctrine_l1_8e20a52a52f39186",
   "schema_version": "public_doctrine_l1_index_v1",
   "source_path": "pyproject.toml",
   "status": "ACTIVE"
@@ -51,8 +51,8 @@ public release beyond repository contents approved
 {
   "source_embedded": false,
   "source_path": "pyproject.toml",
-  "source_sha256": "540a0cd1f9508a18fcee476827547f9d53945f16e90f23daff2ce6bb0c79912d",
-  "source_size_bytes": 867,
+  "source_sha256": "8e20a52a52f3918660a7b92424a4ca54f288c7dc2d05880e98eefee1cec64978",
+  "source_size_bytes": 875,
   "status": "ACTIVE"
 }
 <<<END_PUBLIC_DOCTRINE_L1_SOURCE_JSON>>>
@@ -83,10 +83,10 @@ public release beyond repository contents approved
 {
   "certificate_policy": "payload_sha256_excluding_this_certificate",
   "companion_path": ".doctrine-index/pyproject.toml.doctrine",
-  "compiled_at_utc": "2026-05-01T19:55:09.617208Z",
-  "payload_sha256_excluding_this_certificate": "9d21cfe17803da5aa2c4c7e1db33a67d1fab9d6e9f92412b4f79b7aa11a66528",
+  "compiled_at_utc": "2026-05-02T04:07:02.879690Z",
+  "payload_sha256_excluding_this_certificate": "00feb6cf92d917d719474c5c14e444c1797e6654bacf352ee52c85e148430148",
   "source_path": "pyproject.toml",
-  "source_sha256": "540a0cd1f9508a18fcee476827547f9d53945f16e90f23daff2ce6bb0c79912d",
+  "source_sha256": "8e20a52a52f3918660a7b92424a4ca54f288c7dc2d05880e98eefee1cec64978",
   "status": "ACTIVE"
 }
 <<<END_PUBLIC_DOCTRINE_L1_CERTIFICATE_JSON>>>
