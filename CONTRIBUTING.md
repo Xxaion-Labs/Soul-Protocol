@@ -1,6 +1,8 @@
 # Contributing
 
-Thanks for helping improve Soul Protocol. Keep contributions small, clear, and easy to review.
+Thanks for helping improve Soul Protocol.
+
+This project is building public control matter for AI-native systems. Contributions should keep that spirit: clear enough to inspect, small enough to review, and disciplined enough to preserve user authority.
 
 ## Start here
 
@@ -29,6 +31,16 @@ python tools/build_registry.py
 python tools/check_registry.py
 ```
 
+## What good contributions preserve
+
+A good contribution strengthens the chain:
+
+```text
+readable source -> structured mount -> receipt -> capability boundary -> permission -> recoverable state
+```
+
+The code should feel mundane where it touches machines and profound where it reveals the shape. Prefer inspectable mechanisms over clever opacity.
+
 ## Good contribution types
 
 - Soul Protocol runtime improvements
@@ -39,6 +51,8 @@ python tools/check_registry.py
 - documentation improvements
 - tests and validation tooling
 - issue triage
+- receipt and state inspection improvements
+- capability and permission hardening
 
 ## Pull request rules
 
@@ -46,7 +60,9 @@ python tools/check_registry.py
 - Include a short summary and testing notes.
 - Do not include sensitive, non-public, credentialed, or personal material.
 - Keep public nodes generic and reusable.
-- Preserve user authority, non-autonomy, non-sentience, safety, clarity, and anti-drift principles.
+- Preserve user authority, safety, clarity, and anti-drift principles.
+- Keep behavior inspectable.
+- Add tests when a change affects parsing, mounting, validation, receipts, capabilities, or state.
 
 ## Security and privacy
 
