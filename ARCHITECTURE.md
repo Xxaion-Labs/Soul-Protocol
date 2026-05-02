@@ -5,10 +5,7 @@ Soul Protocol is a user-governed AI-native operating prototype built around moun
 ```text
 .soul
 
-    (digital)
-A                Soul Protocol object
-
- ⧉
+⧉
 ```
 
 The symbol is the object. In prose, call it **a Soul Protocol object**.
