@@ -1,8 +1,23 @@
 # Compatibility
 
+Compatibility is the public handshake.
+
+A compatible tool does not need to implement the whole future of Soul Protocol. It only needs to honor the first law of the object: readable meaning can become structured runtime context without hiding authority from the user.
+
+## Compatibility target
+
 Soul Protocol compatibility begins with support for `.soul` objects.
 
 The current implementation also supports the `.doctrine` compatibility surface during transition.
+
+```text
+.soul object or compatibility file
+  -> parse
+  -> validate
+  -> mount
+  -> receipt
+  -> instruction context
+```
 
 ## Minimum requirements
 
@@ -25,9 +40,30 @@ Projects may say `.doctrine compatible` when they specifically support the curre
 
 ## Ecosystem fit
 
-Compatible projects can act as model adapters, editor integrations, local scripts, services, workflow runners, node registries, and system components.
+Compatible projects can become:
 
-The compatibility floor stays intentionally simple so builders can fork, inspect, implement, and improve it.
+- model adapters
+- editor integrations
+- local scripts
+- services
+- workflow runners
+- node registries
+- system components
+- profile managers
+- receipt viewers
+- permission dashboards
+
+The compatibility floor is intentionally small. It is meant to be copied, forked, audited, implemented, and improved.
+
+## Compatibility principle
+
+A compatible implementation should preserve the chain:
+
+```text
+source -> structure -> mount -> receipt -> context -> capability -> permission
+```
+
+If a tool breaks that chain, it may still be useful, but it is no longer carrying the full public shape of Soul Protocol.
 
 ## Boundary
 
