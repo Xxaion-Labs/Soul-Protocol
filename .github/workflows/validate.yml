@@ -28,7 +28,7 @@ jobs:
         run: python tools/check_registry.py
 
       - name: Check Soul Protocol standard
-        run: python tools/check_glyph_standard.py
+        run: python tools/check_soul_protocol_standard.py
 
       - name: Compile public L1 index
         run: python tools/doctrine_l1_index.py compile --apply
