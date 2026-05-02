@@ -13,14 +13,41 @@ A                Soul Protocol object
 
 The symbol is the object. In prose, call it **a Soul Protocol object**.
 
-Soul Protocol begins as a userland runtime on an open base system and grows toward a bootable, AI-native operating environment: not another app around intelligence, but a control surface where intelligence is mounted through readable objects, bounded by permission, and made accountable through receipts.
+Soul Protocol begins as a userland runtime on an open base system and grows toward an AI-native operating environment: not another app around intelligence, but a control surface where intelligence is mounted through readable objects, bounded by permission, and made accountable through receipts.
+
+## Control spine
+
+The spine is deliberately simple:
+
+```text
+Soul Protocol object
+  -> mount
+  -> instruction context
+  -> command
+  -> capability check
+  -> permission gate
+  -> adapter
+  -> action receipt
+  -> runtime state
+```
+
+Each step exists to keep power legible.
+
+- The object stores meaning.
+- The mount converts meaning into context.
+- The command names the intended action.
+- The capability check identifies the power required.
+- The permission gate keeps the user in authority.
+- The adapter touches the outside world.
+- The receipt records what happened.
+- The state layer keeps the system recoverable.
 
 ## Layer model
 
 ```text
 Soul Protocol
 ├─ Base System
-│  └─ Linux or another open base capable of booting real hardware
+│  └─ open host environment capable of running the public runtime
 ├─ Soul Protocol Control Layer
 │  └─ .soul trajectory, .doctrine-compatible mounts, authority policy, receipts, validation, profiles
 ├─ AI System Shell
@@ -39,13 +66,25 @@ Soul Protocol
    └─ the human remains root authority
 ```
 
-## Current control spine
+## Mounting
 
-The current prototype proves this spine:
+Mounting is the act that turns a readable artifact into runtime context.
 
-```text
-Soul Protocol-compatible object -> mount -> command -> capability -> permission -> adapter -> receipt -> state
-```
+A mount does not grant autonomy. A mount prepares structured context. The runtime may then use that context to shape outputs, route commands, validate requirements, or constrain adapter behavior.
+
+The mount receipt is the proof surface. It records what was mounted, where it came from, and what context hash resulted.
+
+## Capability and permission
+
+Soul Protocol treats capability as a named boundary.
+
+A runtime should know when an action requires file access, shell access, network access, model access, or another power-bearing operation. Permissioned actions should ask before crossing that boundary.
+
+## Receipts
+
+Receipts are how the system resists fog.
+
+A receipt should make an action inspectable after it happens. It does not prove more than it records, but it gives the user and future tooling a durable trail.
 
 ## First build target
 
@@ -57,7 +96,7 @@ The first target is a Soul Protocol-aware userland running on an open base syste
 2. mounting before automation
 3. receipts before trust
 4. user authority before autonomy
-5. bootable environment later
+5. broader operating environment later
 
 ## Operating principles
 
@@ -68,21 +107,6 @@ The first target is a Soul Protocol-aware userland running on an open base syste
 - State must be legible and recoverable.
 - Soul Protocol objects must be mountable, composable, and verifiable.
 - Public code must remain open under AGPLv3-or-later.
-
-## Current milestone
-
-Soul Protocol currently has a minimal compatibility shell that can:
-
-- load a Soul Protocol-compatible profile
-- mount it
-- emit receipts
-- accept user commands
-- route commands to safe stub adapters
-- log actions
-- show state
-- refuse unpermissioned actions
-
-This proves the operating control spine before full desktop or kernel-level integration.
 
 ## Boundary
 
