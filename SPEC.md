@@ -5,19 +5,14 @@ This specification defines the current public surface for `.soul` and Soul Proto
 ```text
 .soul
 
-    (digital)
-A                Soul Protocol object
-
- ⧉
+⧉
 ```
 
 ## Core law
 
 ```text
-.soul                 = public filetype trajectory
-(digital)             = qualifier
-A Soul Protocol object = prose class
-⧉                     = object symbol
+.soul = public filetype trajectory
+⧉     = object symbol
 ```
 
 The symbol is the object.
